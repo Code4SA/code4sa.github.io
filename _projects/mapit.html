@@ -1,0 +1,79 @@
+---
+layout: default
+title: MapIt.code4sa.org
+category: map
+image: /images/projects/mapit.png
+extra: 2015
+link: /projects/mapit.html
+---
+<!-- PAGE TOP -->
+<section class="page-title">
+	<div class="container">
+
+		<header>
+
+			<h2><!-- Page Title -->
+				{{page.title}}
+			</h2><!-- /Page Title -->
+
+		</header>
+
+	</div>			
+</section>
+<!-- /PAGE TOP -->
+
+<!-- CONTENT -->
+<section>
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-6 col-md-7">
+				<div class="owl-carousel controlls-over product-image" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+					<div>
+						<img alt="" class="img-responsive" src="{{page.image}}">
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-sm-6 col-md-5">
+				<h3>Map</h3>
+				<p>Geolocation and boundary API for provinces, municipalities, wards and more in South Africa.</p>
+				<a href="http://mapit.code4sa.org/" target="_blank" class="btn btn-primary btn-lg btn-margin-top"><i class="fa fa-caret-right" ></i> Go To Project</a>
+			</div>
+		</div>
+
+
+		<hr />
+
+		<!-- RELATED -->
+		<h2><strong>Related</strong> Projects</h2>
+		<div class="row">
+			{% for project in site.projects %}
+			{% if project.category == page.category and project.title != page.title %}
+			<div class="col-md-3"><!-- item 1 -->
+				<div class="item-box">
+					<figure>
+						<a class="item-hover" href="{{project.link}}">
+							<span class="overlay color2"></span>
+							<span class="inner">
+								<span class="block fa fa-plus fsize20"></span>
+								<strong>Project</strong> Details
+							</span>
+						</a>
+						<img class="img-responsive" src="{{project.image}}" width="260" height="260" alt="">
+					</figure>
+					<div class="item-box-desc">
+						<h4>{{project.title}}</h4>
+						<small class="styleColor">{{project.extra}}</small>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+		<!-- /RELATED -->
+
+	</div>
+</section>
+	<!-- /CONTENT -->
