@@ -10,6 +10,6 @@ title: Code for South Africa
 email: info@code4sa.org
 description: > # this means to ignore newlines until "baseurl:"
   Code for South Africa is a civic technology lab that uses data and technology to drive social change
-baseurl: "" # the subpath of your site, e.g. /blog
+
 
 
