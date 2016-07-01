@@ -1,0 +1,94 @@
+---
+layout: default
+---
+<!-- PAGE TOP -->
+<section class="page-title">
+	<div class="container">
+		<header>
+			<h2><!-- Page Title -->
+				<strong>Contact</strong>
+			</h2><!-- /Page Title -->
+		</header>
+	</div>			
+</section>
+<!-- /PAGE TOP -->
+
+<!-- CONTENT -->
+<section>
+	<div class="container">
+
+		<div class="row">
+			<!-- FORM -->
+			<div class="col-md-8">
+
+				<h3>Drop us a line or just say <strong><em>Hello!</em></strong></h3>
+
+				<form id="contactForm" action="/assets/php/contact.php" method="post">
+					<div class="row">
+						<div class="form-group">
+							<div class="col-md-6">
+								<label>Full Name *</label>
+								<input required type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="contact_name" id="contact_name">
+							</div>
+							<div class="col-md-6">
+								<label>E-mail Address *</label>
+								<input required type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="contact_email" id="contact_email">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group">
+							<div class="col-md-12">
+								<label>Subject</label>
+								<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="contact_subject" id="contact_subject">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group">
+							<div class="col-md-12">
+								<label>Message *</label>
+								<textarea required maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="contact_comment" id="contact_comment"></textarea>
+							</div>
+						</div>
+					</div>
+
+					<br />
+
+					<div class="row">
+						<div class="col-md-12">
+							<input class="hidden" type="text" name="captcha" id="captcha" value="" /><!-- keep it hidden -->
+							<input type="submit" value="Send Message" class="btn btn-primary btn-lg" id="contact_submit" />
+						</div>
+					</div>
+				</form>
+
+			</div>
+			<!-- /FORM -->
+
+			<!-- INFO -->
+			<div class="col-md-4">
+
+				<h2>Visit Us</h2>
+
+				<div id="gmap" class="grayscale"><!-- google map --></div>
+				<script type="text/javascript">
+					var	$googlemap_latitude 	= -33.977967,
+					$googlemap_longitude	= 18.4667999,
+					$googlemap_zoom			= 20;
+				</script>
+
+				<div class="divider white half-margins"><!-- divider --></div>
+
+				<p class="nomargin-bottom">
+					<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> Campground Road, Claremont, Cape Town <br> (Entrance via Hemlock Street)</span>
+					<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">1800-555-1234</a></span>
+					<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:info@code4sa.org">info@code4sa.org</a></span>
+				</p>
+
+			</div>
+			<!-- /INFO -->
+		</div>
+	</div>
+</section>
+<!-- /CONTENT -->
