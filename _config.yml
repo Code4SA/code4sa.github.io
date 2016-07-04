@@ -14,6 +14,8 @@ description: > # this means to ignore newlines until "baseurl:"
 collections:
   projects:
     output: true
+  our-team:
+    output: true
 
 gems: [jekyll-paginate]
 

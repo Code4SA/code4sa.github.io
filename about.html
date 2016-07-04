@@ -21,575 +21,83 @@ title: About
 <section>
 	<div class="container">
 
-		<p class="lead">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-		<p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enim sadips ipsums dolores sit.Nemo enims sadips ipsums un inventore veritatis et quasi.</p>
-
 		<!-- the team -->
 		<!-- the information on this page can be dynamically created. It will result in way less code and it will make updating and removing of content easier-->
 		<div class="row margin-top60">
-
+		{% for person in site.data.our-team %}
+			{% if person.type == "current" %}
 			<div class="col-sm-4 col-md-3"><!-- member -->
 				<div class="box-content thumbnail text-center">
 					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_adi.jpg" alt="">
+						<img class="img-responsive" src="{{person.image}}" alt="">
 					</span>
 					<div class="caption text-left">
 
 						<div class="clearfix margin-bottom10">
 							<div class="pull-left">
-								<h4 class="nomargin">Adi Eyal
-									<small class="block">Data Evangelist</small>
+								<h4 class="nomargin">{{person.name}}
+									<small class="block">{{person.pos}}</small>
 								</h4>
 							</div>
 							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
+							{% if person.social == "none" %}
+								
+							{% else %}
+								<a href="{{person.social}}" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
+							{% endif %}
 							</div>
-
 						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
 					</div>
 				</div>
 			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_gabriella.jpg" alt="">
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Gabriella Razzano
-									<small class="block">Policy and Strategy</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail ">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_jason.jpg" alt="">
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Jason Young
-									<small class="block">Data Journalism Adv</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_greg.jpg" alt="">
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Greg Kempe
-									<small class="block">Lead Technologist</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_raymond.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Raymond Josephus
-									<small class="block">Data Journalist</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_jennifer.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Jennifer Walker
-									<small class="block">Wrangler of things</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_damian.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Damian Schleter
-									<small class="block">Writer of code</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_daniela.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Daniela Lépiz
-									<small class="block">Data Journalist</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-		</div><!--Team-->
-		<div class="row margin-top60">
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_julia.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Julia Renouprez
-									<small class="block">Data Wrangler</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_jd.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">JD Bothma
-									<small class="block">Writer of code</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_nadia.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Nadia Thorn
-									<small class="block">Project Manager</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_sarah.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Sarah Evans
-									<small class="block">News Editor</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
+			{% else %}
+			{% endif %}
+		{% endfor %}
 		</div>
-
-		<div class="row margin-top60"><!--Team-->
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_lenina.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Lenina Rassool
-									<small class="block">Communications</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_guus.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Guus Hoekman
-									<small class="block">Wrangling Fellow</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_jeanette.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Jeanette Strydom
-									<small class="block">Community Manager</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_mats.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Mats Blakstad
-									<small class="block">Junior Contactor</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-		</div><!--End of Team 4th row-->
 
 		<div class="callout styleBackgroundColor"><!-- add "styleBackgroundColor" class for colored background and white text OR "dark" for a dark callout -->
 			<div class="container">
 
 				<div class="row">
 					<div class="col-md-12"><!-- title + shortdesc -->
-						<h3 class="text-center">Alumni</h3>
+						<h3 class="text-center">People we have worked with in the past</h3>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row margin-top60"><!--Team-->
 
-			<div class="col-sm-4 col-md-3"><!-- member -->
+		<div class="row margin-top60"><!--Alumni-->
+		{% for person in site.data.our-team %}
+			{% if person.type == "alumni" %}
+			<div class="col-sm-4 col-md-4"><!-- member -->
 				<div class="box-content thumbnail text-center">
 					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_osman.jpg" alt="" />
+						<img class="img-responsive" src="{{person.image}}" alt="">
 					</span>
 					<div class="caption text-left">
 
 						<div class="clearfix margin-bottom10">
 							<div class="pull-left">
-								<h4 class="nomargin">Osman Siddiqi
-									<small class="block">Visiting Fellow</small>
+								<h4 class="nomargin">{{person.name}}
+									<small class="block">{{person.pos}}</small>
 								</h4>
 							</div>
 							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
+							{% if person.social == "none" %}
+								
+							{% else %}
+								<a href="{{person.social}}" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
+							{% endif %}
 							</div>
 
 						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
 					</div>
 				</div>
 			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_khutjo.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Khutjo Konyana
-									<small class="block">Data Herder</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_petrus.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Petrus J.v. Rensburg
-									<small class="block">Developer</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_siyabonga.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Siyabong frika
-									<small class="block">SABC Specialist Data Journalism Consultant</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-
-						</div>
-
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-		</div>
-		<div class="row margin-top60"><!--Team-->
-			<div class="col-sm-4 col-md-3"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_hannah.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Hannah Williams
-									<small class="block">Data Journalism Trainer</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-						</div>
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-		</div><!--Alumni-->
+			{% else %}
+			{% endif %}
+		{% endfor %}
+		</div><!--end of alumni-->
 
 		<div class="callout styleBackgroundColor"><!-- add "styleBackgroundColor" class for colored background and white text OR "dark" for a dark callout -->
 			<div class="container">
@@ -602,59 +110,40 @@ title: About
 			</div>
 		</div>
 		<div class="row margin-top60"><!--Smart people we consult -->
-			<div class="col-sm-4 col-md-6"><!-- member -->
+			{% for person in site.data.our-team %}
+			{% if person.type == "consultant" %}
+			<div class="col-sm-4 col-md-3"><!-- member -->
 				<div class="box-content thumbnail text-center">
 					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_katherine.jpg" alt="" />
+						<img class="img-responsive" src="{{person.image}}" alt="">
 					</span>
 					<div class="caption text-left">
 
 						<div class="clearfix margin-bottom10">
 							<div class="pull-left">
-								<h4 class="nomargin">Katherine Eyal
-									<small class="block">Econometrician</small>
+								<h4 class="nomargin">{{person.name}}
+									<small class="block">{{person.pos}}</small>
 								</h4>
 							</div>
 							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
+							{% if person.social == "none" %}
+								
+							{% else %}
+								<a href="{{person.social}}" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
+							{% endif %}
 							</div>
+
 						</div>
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
 					</div>
 				</div>
 			</div><!-- /member -->
-
-			<div class="col-sm-4 col-md-6"><!-- member -->
-				<div class="box-content thumbnail text-center">
-					<span class="item-image">
-						<img class="img-responsive" src="/images/team/team_hassel.jpg" alt="" />
-					</span>
-					<div class="caption text-left">
-
-						<div class="clearfix margin-bottom10">
-							<div class="pull-left">
-								<h4 class="nomargin">Hassel Fallas
-									<small class="block">Data Editor at La Nación</small>
-								</h4>
-							</div>
-							<div class="pull-right">
-								<a href="#" class="btn ico-only btn-facebook btn-xs"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="btn ico-only btn-google-plus btn-xs"><i class="fa fa-google-plus"></i></a>
-							</div>
-						</div>
-						<p class="noborder nomargin nopadding">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>
-					</div>
-				</div>
-			</div><!-- /member -->
-		</div><!--Alumni-->
+			{% else %}
+			{% endif %}
+		{% endfor %}
+		</div>
+		<!-- /the team -->
 
 	</div>
-	<!-- /the team -->
-
-</div>
 </section>
 <!-- /CONTENT -->
 
@@ -677,4 +166,4 @@ title: About
 
 	</div>
 </div>
-			<!-- /CALLOUT -->
+<!-- /CALLOUT -->
