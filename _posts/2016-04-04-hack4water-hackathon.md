@@ -4,11 +4,11 @@ title: Hack4Water Hackathon
 date: 2016-04-04
 excerpt: |
   Participants from different backgrounds worked together to create drought solutions in our recent Hack4Water hackathon. This event forms part of a nationwide challenge in partnership with The Department of Water and Sanitation, Open Government Partnership to help address South Africa’s water shortages. 
-image: http://code4sa.org//images/blog/hack4water1.jpg
+image: /images/blog/hack4water1.jpg
 author: Jeanette Strydom
 ---
 
-<img src="//images/blog/h4w-image.jpg">
+<img src="/images/blog/h4w-image.jpg">
 
 
 Participants in the recent [Hack4Water](http://www.hack4water.org.za/) hackathon could hardly have missed the irony of our water hack starting on a grey, rainy evening in Cape Town. This hackathon was part of a nationwide challenge in partnership with the [Department of Water and Sanitation](https://www.dwa.gov.za/), along with [Open Government Partnership](http://www.opengovpartnership.org/) to help address South Africa’s water shortages. Learn more about how to get involved [here](http://www.hack4water.org.za/).

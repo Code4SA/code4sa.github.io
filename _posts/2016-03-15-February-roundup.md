@@ -4,7 +4,7 @@ title: February Roundup
 date: 2016-03-15
 excerpt: |
     If January was a busy month, February was downright outrageous. 21 working days, here are the highlights.
-image: http://code4sa.org//images/blog/codebridge-contrast.png
+image: /images/blog/codebridge-contrast.png
 author: Adi Eyal
 ---
 

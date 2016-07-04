@@ -4,11 +4,11 @@ title: Hack for Water
 date: 2016-03-29
 excerpt: |
   South Africa is in the grip of the worst drought in a century, according to The South African Weather Service. You already know all of this, but what can you do to help? We need YOU to get involved by coming up with innovative tech and ideas that can help solve this complex problem. Here’s how...
-image: http://code4sa.org//images/blog/hack4water1.jpg
+image: /images/blog/hack4water1.jpg
 author: Jeanette Strydom
 ---
 
-<img src="//images/blog/hack4water1.jpg">
+<img src="/images/blog/hack4water1.jpg">
 
 South Africa is in the grip of the worst drought in a century, according to The South African Weather Service. Farmers and citizens across the country are struggling to get access to enough water. Crops are failing, livestock are dying and entire communities do not have enough water to survive. The result is that food prices are skyrocketing due to dwindling supply of local produce and staples like maize and wheat are having to be imported at a huge cost.
 

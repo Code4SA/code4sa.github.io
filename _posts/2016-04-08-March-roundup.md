@@ -2,8 +2,7 @@
 layout: post
 title: March Roundup
 date: 2016-04-08
-excerpt: |
-    One quarter of the year gone - here's is our March roundup.
+excerpt: One quarter of the year gone - here's is our March roundup.
 image: /images/blog/codebridge-contrast.png
 author: Adi Eyal
 ---
@@ -77,7 +76,7 @@ Here is an exercept from the Finance Minister's [budget speech](http://www.treas
 
 Code for South Africa is the implementing partner for this project. Not only are we developing an API to make this availabe as well as a municipal scorecard, we are also running a series of [accountability stack](https://indigotrust.org.uk/2012/11/12/good-governance-the-accountability-stack-and-multi-lateral-fora/) and data quest events to explore how civil society and media can use this data to make government more accountable.
 
-<img src="//images/blog/nationaltreasury.png" />
+<img src="/images/blog/nationaltreasury.png" />
 
 ## Hack4Water
 - South Africa is currently experience its worst drought in a 100 years. Along with the Department of Public Service and Administration, Department of Water and Sanitation, Microsoft and the Gauteng Innovation Lab, we launch the [Hack4Water](http://hack4water.org.za) campaign which calls out to citizens to 

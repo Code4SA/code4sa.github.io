@@ -4,12 +4,12 @@ title: Have your say on the budget
 date: 2016-02-25
 excerpt: |
   Introducing an online tool that allows ordinary South Africans to have their say on the budget
-image: http://code4sa.org//images/blog/budget-banner_v2.2.png
+image: /images/blog/budget-banner_v2.2.png
 author: Lenina Rassool
 ---
 
 
-<img src="//images/blog/Budget.JPG">
+<img src="/images/blog/Budget.JPG">
 
 While the country is still processing Finance Minister Pravin Gordhan’s budget speech, what most people don’t know is that it still needs to undergo committee debates and a voting process before it’s passed into law. 
 
