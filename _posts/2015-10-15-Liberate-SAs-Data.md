@@ -5,10 +5,10 @@ date: 2015-10-15
 author: Raymond Joseph
 excerpt: |
      The open data movement in South Africa is on a roll and we need you to join us on October 24 for game-changing events in Durban, Pretoria and Cape Town. 
-image: http://code4sa.org//images/blog/ogp-hackathon_fb-banner_v1.1.png
+image: /images/blog/ogp-hackathon_fb-banner_v1.1.png
 ---
 
-<a href="http://code4sa.org//images/blog/ogp-hackathon_fb-banner_v1.1.png" target="_blank"><img src="//images/blog/ogp-hackathon_fb-banner_v1.1.png"></a>
+<a href="/images/blog/ogp-hackathon_fb-banner_v1.1.png" target="_blank"><img src="//images/blog/ogp-hackathon_fb-banner_v1.1.png"></a>
 
 The open data movement in South Africa is on a roll and we need you to join us on October 24 for game-changing events in Durban, Pretoria and Cape Town.
 

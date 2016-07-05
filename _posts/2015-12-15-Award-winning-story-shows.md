@@ -4,12 +4,12 @@ title: Award-winning story shows impact, potential of data journalism tools
 date: 2015-12-15
 excerpt: |
    Sometimes the best story ideas come from a random discussion that sparks a light bulb moment.
-image: http://code4sa.org//images/blog/domworkersscreenshot.jpg
+image: http:/images/blog/domworkersscreenshot.jpg
 author: Raymond Joseph
 ---
 
 
-<img src="//images/blog/domworkersscreenshot.jpg">
+<img src="/images/blog/domworkersscreenshot.jpg">
 
 Sometimes the best story ideas come from a random discussion that sparks a light bulb moment.
 
@@ -27,7 +27,7 @@ As a techie and a talented data analyst, Eyal set out to find a tech solution, b
 
 “It’s not intended as a name-and-shame tool, but rather to be educational and to help employers get a better idea of the personal circumstances of the person who is such an integral part of their household,” said Eyal.
 
-<img src="//images/blog/living-wage.png">
+<img src="/images/blog/living-wage.png">
 
 The next step was to put a human face to the story to help bring the data to life, which Harrisberg did by focusing on three women and their personal circumstances.
 

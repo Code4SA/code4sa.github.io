@@ -4,7 +4,7 @@ title: National Data Liberation
 date: 2015-11-03
 excerpt: |
    What happens when 3 cities and a couple of hundred citizens get together to liberate their country's data.
-image: http://code4sa.org//images/blog/ogp-hackathon_fb-banner_v1.1.png
+image: /images/blog/ogp-hackathon_fb-banner_v1.1.png
 author: Jennifer Walker
 ---
 
@@ -16,31 +16,31 @@ Code for South Africa partnered with the formidable [Geekulcha](http://blog.geek
 
 <div class="row p" style="padding-bottom: 20px">
   <div class="col-xs-6">
-    <a href="http://code4sa.org//images/blog/dataquest-02.jpg" target="_blank"><img src="//images/blog/dataquest-02.jpg"></a>
+    <a href="/images/blog/dataquest-02.jpg" target="_blank"><img src="//images/blog/dataquest-02.jpg"></a>
   </div>
   <div class="col-xs-6">
-    <a href="http://code4sa.org//images/blog/dataquest-01.jpg" target="_blank"><img src="//images/blog/dataquest-01.jpg"></a>
+    <a href="/images/blog/dataquest-01.jpg" target="_blank"><img src="//images/blog/dataquest-01.jpg"></a>
   </div>
   <div> &nbsp; </div>
   <div class="col-xs-6">
-    <a href="http://code4sa.org//images/blog/dataquest-03.jpg" target="_blank"><img src="//images/blog/dataquest-03.jpg"></a>
+    <a href="/images/blog/dataquest-03.jpg" target="_blank"><img src="//images/blog/dataquest-03.jpg"></a>
   </div>
   <div class="col-xs-6">
-    <a href="http://code4sa.org//images/blog/dataquest-04.jpg" target="_blank"><img src="//images/blog/dataquest-04.jpg"></a>
+    <a href="/images/blog/dataquest-04.jpg" target="_blank"><img src="//images/blog/dataquest-04.jpg"></a>
   </div>  
  <div> &nbsp; </div>
   <div class="col-xs-6">
-    <a href="http://code4sa.org//images/blog/dataquest-05.jpg" target="_blank"><img src="//images/blog/dataquest-05.jpg"></a>
+    <a href="/images/blog/dataquest-05.jpg" target="_blank"><img src="//images/blog/dataquest-05.jpg"></a>
   </div>
   <div class="col-xs-6">
-    <a href="http://code4sa.org//images/blog/dataquest-06.jpg" target="_blank"><img src="//images/blog/dataquest-06.jpg"></a>
+    <a href="/images/blog/dataquest-06.jpg" target="_blank"><img src="//images/blog/dataquest-06.jpg"></a>
   </div>    
  <div> &nbsp; </div>
   <div class="col-xs-6">
-    <a href="http://code4sa.org//images/blog/dataquest-08.jpg" target="_blank"><img src="//images/blog/dataquest-08.jpg"></a>
+    <a href="/images/blog/dataquest-08.jpg" target="_blank"><img src="//images/blog/dataquest-08.jpg"></a>
   </div>
   <div class="col-xs-6">
-    <a href="http://code4sa.org//images/blog/dataquest-09.jpg" target="_blank"><img src="//images/blog/dataquest-09.jpg"></a>
+    <a href="/images/blog/dataquest-09.jpg" target="_blank"><img src="//images/blog/dataquest-09.jpg"></a>
   </div>  
 </div>
 
@@ -48,10 +48,10 @@ We saw many teams keeping it topical by digging into the cost of education, the 
 
 <div class="row p" style="padding-bottom: 20px">
   <div class="col-xs-6">
-    <a href="http://code4sa.org//images/blog/dataquest-12.jpg" target="_blank"><img src="//images/blog/dataquest-12.jpg"></a>
+    <a href="/images/blog/dataquest-12.jpg" target="_blank"><img src="//images/blog/dataquest-12.jpg"></a>
   </div>
   <div class="col-xs-6">
-    <a href="http://code4sa.org//images/blog/dataquest-11.png" target="_blank"><img src="//images/blog/dataquest-11.png"></a>
+    <a href="/images/blog/dataquest-11.png" target="_blank"><img src="//images/blog/dataquest-11.png"></a>
   </div>
 </div>
 

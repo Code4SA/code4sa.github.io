@@ -58,7 +58,7 @@ The *data-name* attribute is where we store the human-readable version of the co
 
 The cheating part is here. Rather than writing complex code to dynamically add lines and the infobox, I simply created it all in Inkscape:
 
-<img src="//images/blog/quick_lines.png" style="max-width:400px"/>
+<img src="/images/blog/quick_lines.png" style="max-width:400px"/>
 
 Notice that all the lines are visible which means it's going to look messy. We'll fix that in the javascript.
 
@@ -103,7 +103,7 @@ I also used it for the "Read more" link at the bottom.
 
 SVG is not a particularly good mark-up language when it comes to dynamic text, word wrapping in particular. SVG doesn't have a concept of a dynamically sizing box. What this means is that if you want to change the text in the infobox on the fly, you don't have any idea about how long it's going to be. You end up with text that doesn't wrap and flows out of your text area. Yuck!
 
-<img src="//images/blog/quick_wordwrap.png" style="max-width:300px"/>
+<img src="/images/blog/quick_wordwrap.png" style="max-width:300px"/>
 
 What to do?
 

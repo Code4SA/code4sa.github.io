@@ -4,7 +4,7 @@ title: Visualising South African Renewable Energy Applications in 2015
 date: 2015-12-15
 excerpt: |
    Three open data visualisation tools are showcased here, Cartodb, infogr.am, and QGIS, with some handy tips in overcoming simple hurdles in the analysis process.
-image: http://code4sa.org//images/blog/3-Infogram-Total-Techs.png
+image: none
 author: Julia Renouprez
 ---
 
@@ -14,11 +14,11 @@ I wanted to better understand the scope of renewable energy development in South
 
 The first minor hurdle that I encountered was that the megawatt field was in text format, and needed to be converted to integer format in order to calculate the statistics that I wanted.  I utilised the field calculator in QGIS to add a new field which I called “Mwatt_int” and populated it with the values from the “Megawatt” column:
 
-<a href="http://code4sa.org//images/blog/1-Field-calc.png" target="_blank"><img src="//images/blog/1-Field-calc.png"></a>
+<a href="/images/blog/1-Field-calc.png" target="_blank"><img src="/images/blog/1-Field-calc.png"></a>
 
 With the data now in the correct format, I was able to utilise the Group Stats plugin in [QGIS](www.qgis.co.za) in order to calculate some statistics on both 2015 Q2 and Q3 data:
 
-<a href="http://code4sa.org//images/blog/2-Group-Stats.png" target="_blank"><img src="//images/blog/2-Group-Stats.png"></a>
+<a href="/images/blog/2-Group-Stats.png" target="_blank"><img src="/images/blog/2-Group-Stats.png"></a>
 
 I then exported the results into a CSV file in order to analyse the 2 quarterly sets of statistics together.
 
@@ -38,11 +38,11 @@ Finally, for a geographic visualisation of the data, I mapped the 2015 Q3 data t
 
 In order to map the data that I wanted to see, I had to run 2 selections on the data, the first to select the relevant categories:
 
-<a href="http://code4sa.org//images/blog/5-query-to-map-2-cats.png" target="_blank"><img src="//images/blog/5-query-to-map-2-cats.png"></a>
+<a href="/images/blog/5-query-to-map-2-cats.png" target="_blank"><img src="/images/blog/5-query-to-map-2-cats.png"></a>
 
 And the second to eliminate those applications that are no longer active:
 
-<a href="http://code4sa.org//images/blog/6-query-to-map-not-active.png" target="_blank"><img src="//images/blog/6-query-to-map-not-active.png"></a>
+<a href="/images/blog/6-query-to-map-not-active.png" target="_blank"><img src="/images/blog/6-query-to-map-not-active.png"></a>
 
 which resulted in a sub-set of the applications that utilise Onshore Wind and Solar Photovoltaic applications that haven’t been withdrawn. 
 

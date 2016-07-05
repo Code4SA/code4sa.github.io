@@ -5,6 +5,7 @@ date: 2016-01-27
 excerpt: |
    Hear Jason Norwood-Young talk about school pregnancies, unfair access to APIs and BeautfulSoup 
 author: Adi Eyal
+image: none
 ---
 
 Jason Norwood-Young who we dearly miss at the office was given the floor by the ZADevChat crew to talk about open data. Listen to the interview to hear him talk about school preganancies, the race to the election results and BeautifulSoup
