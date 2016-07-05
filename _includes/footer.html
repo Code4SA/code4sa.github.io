@@ -30,18 +30,13 @@
       <div class="spaced col-md-3 col-sm-4 hidden-xs">
         <h4>Recent <strong>Posts</strong></h4>
         <ul class="list-unstyled">
+          {% assign items = site.posts | sort: date | reverse %}
+          {% for post in items limit: 3 %}
           <li>
-            <a class="block" href="#">New CSS3 Transitions this Year</a>
-            <small>June 29, 2014</small>
+            <a class="block" href="{{post.url}}">{{post.title}}</a>
+            <small>{{post.date | date_to_long_string}}</small>
           </li>
-          <li>
-            <a class="block" href="#">Inteligent Transitions In UX Design</a>
-            <small>June 29, 2014</small>
-          </li>
-          <li>
-            <a class="block" href="#">Lorem Ipsum Dolor</a>
-            <small>June 29, 2014</small>
-          </li>
+          {% endfor %}
         </ul>
       </div>
       <!-- /col #2 -->
@@ -49,17 +44,7 @@
       <!-- col #3 -->
       <div class="spaced col-md-3 col-sm-4 hidden-xs">
         <h4>Recent <strong>Tweets</strong></h4>
-        <ul class="list-unstyled fsize13">
-          <li>
-            <i class="fa fa-twitter"></i> <a href="#">@John Doe</a> Pilsum dolor lorem sit consectetur adipiscing orem sequat <small class="ago">8 mins ago</small>
-          </li>
-          <li>
-            <i class="fa fa-twitter"></i> <a href="#">@John Doe</a> Remonde sequat ipsum dolor lorem sit consectetur adipiscing  <small class="ago">8 mins ago</small>
-          </li>
-          <li>
-            <i class="fa fa-twitter"></i> <a href="#">@John Doe</a> Imperdiet condimentum diam dolor lorem sit consectetur adipiscing <small class="ago">8 mins ago</small>
-          </li>
-        </ul>
+        <a class="twitter-timeline" data-width="300" data-height="300" data-theme="dark" href="https://twitter.com/code4sa/lists/site-feed">A Twitter List by code4sa</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
       <!-- /col #3 -->
 
@@ -71,7 +56,7 @@
           <br>
           Licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>
         </p>
-
+        <!--
         <h4><small><strong>Subscribe to our Newsletter</strong></small></h4>
         <form id="newsletterSubscribe" method="post" action="php/newsletter.php" class="input-group">
           <input required type="email" class="form-control" name="newsletter_email" id="newsletter_email" value="" placeholder="E-mail Address">
@@ -79,7 +64,7 @@
             <button class="btn btn-primary">SUBMIT</button>
           </span>
         </form>
-
+        -->
       </div>
       <!-- /col #4 -->
 
