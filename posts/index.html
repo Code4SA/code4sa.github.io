@@ -92,10 +92,10 @@ title: Blog
 
 				<!-- blog search -->
 				<div class="widget">
-					<form id="newsletterSubscribe" method="post" action="php/newsletter.php" class="input-group">
-						<input type="text" class="form-control" name="s" value="" placeholder="Blog Search" />
+					<form  method="get" action="/search.html" class="input-group">
+						<input type="text" class="form-control" id="search_box" name="query" placeholder="Blog Search" />
 						<span class="input-group-btn">
-							<button class="btn btn-primary"><i class="fa fa-search"></i></button>
+							<button class="btn btn-primary" type="submit" value="search"><i class="fa fa-search"></i></button>
 						</span>
 					</form>
 				</div>
