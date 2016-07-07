@@ -1,28 +1,149 @@
 ---
 layout: default
 ---
-<div class="container">
-	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<!-- PAGE TOP -->
+<section class="page-title">
+	<div class="container">
 
-		<header class="post-header">
-			<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-			<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+		<header>
+
+			<ul class="breadcrumb"><!-- breadcrumb -->
+				<li><a href="/posts/index.html">Blog</a></li>
+				<li class="active"></li>
+			</ul><!-- /breadcrumb -->
+
+			<h2><!-- Page Title -->
+				<strong>Read</strong> Below
+			</h2><!-- /Page Title -->
+
 		</header>
 
-		<div class="post-content" itemprop="articleBody">
-			{{ content }}
+	</div>			
+</section>
+<!-- /PAGE TOP -->
+
+<!-- CONTENT -->
+<section>
+	<div class="container">
+		<div id="blog" class="row">
+
+			<!-- BLOG ARTICLE -->
+			<div class="col-md-9 col-sm-9">
+
+				<div class="prev-article row">
+
+					<div class="blog-prev-date col-md-3 col-sm-3">
+						<span class="date">
+							{{page.date | date: "%d"}} <small>{{page.date | date: "%B %Y"}}</small>
+						</span>
+						<span class="info hidden-xs">
+							<span class="block"><i class="fa fa-user"></i> BY <a href="blog-author.html">{{page.author}}</a></span>
+						</span>
+					</div>
+
+					<div class="col-md-9 col-sm-9">
+
+						<h1>{{page.title}}</h1>
+						{%  if page.image == "none" %}
+						{% else %}
+						<!-- carousel -->
+						<div class="owl-carousel text-center controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "autoPlay": true, "transitionStyle":"fadeUp"}'><!-- transitionStyle: fade, backSlide, goDown, fadeUp,  -->
+							<div class="item">
+								<img src="{{page.image}}" class="img-responsive" alt="img" />
+							</div>
+						</div>
+						{% endif %}
+						<!-- /carousel -->
+
+						<!-- article content -->
+						<article>
+							{{content}}
+						</article>
+
+						<!-- SOCIAL -->
+						<p class="socials">
+							<a href="#" class="rounded-icon social fa fa-facebook"><!-- facebook --></a>
+							<a href="#" class="rounded-icon social fa fa-twitter"><!-- twitter --></a>
+							<a href="#" class="rounded-icon social fa fa-google-plus"><!-- google plus --></a>
+							<a href="#" class="rounded-icon social fa fa-pinterest"><!-- pinterest --></a>
+							<a href="#" class="rounded-icon social fa fa-linkedin"><!-- linkedin --></a>
+						</p>
+
+						<hr class="half-margins invisible" />
+
+					</div>
+
+				</div>
+
+			</div>
+			<!-- /BLOG ARTICLE -->
+
+			<!-- BLOG SIDEBAR -->
+			<div class="col-md-3 col-sm-3">
+
+				<!-- blog search -->
+				<div class="widget">
+					<form  method="get" action="/search.html" class="input-group">
+						<input type="text" class="form-control" id="search_box" name="query" placeholder="Blog Search" />
+						<span class="input-group-btn">
+							<button class="btn btn-primary" type="submit" value="search"><i class="fa fa-search"></i></button>
+						</span>
+					</form>
+				</div>
+
+				<!-- RECENT,POPULAR -->
+				<div class="widget">
+
+					<!-- TABS -->
+					<div class="tabs nomargin-top">
+
+						<!-- tabs -->
+						<ul class="nav nav-tabs nav-justified">
+							<li class="active">
+								<a href="#tab1" data-toggle="tab">
+									Recent
+								</a>
+							</li>
+							<!--<li>
+								<a href="#tab2" data-toggle="tab">
+									Recent
+								</a>
+							</li>-->
+						</ul>
+
+						<!-- tabs content -->
+						<div class="tab-content">
+							<div id="tab1" class="tab-pane active">
+								<ul>
+									{% assign items = site.posts | sort: date | reverse %}
+									{% for post in items limit: 10 %}
+									<li><a href="{{post.url}}"> {{post.title}}</a> <small>{{post.date | date_to_long_string }}</small></li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<!-- /TABS -->
+
+				</div>
+				<!-- /RECENT,POPULAR -->
+
+			</div>
+			<!-- /BLOG SIDEBAR -->
+
+		</div>
+		<div class="divider"><!-- divider -->
+			<i class="fa fa-leaf"></i>
 		</div>
 
-	</article>
-	<div class="divider"><!-- divider -->
-		<i class="fa fa-leaf"></i>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+			<a class="btn btn-primary btn-block" href="/posts/index.html" role="button">Read More Posts ...</a>
+			</div>
+			<div class="col-md-3"></div>
+		</div><br>
 	</div>
-	<div class="row">
-		<div class="col-md-4"></div>
-		<div class="col-md-4">
-			<a class="btn btn-primary btn-block" href="/posts/index.html" role="button">Blog</a>
-		</div>
-		<div class="col-md-4"></div>
-	</div><br>
-</div>
-
+</section>
+<!-- /CONTENT -->

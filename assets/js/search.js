@@ -7,8 +7,11 @@
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
+        appendString += '<div class="clearfix search-result"><!-- item -->'
+        appendString += '<h4><a href="' + item.url + '">' + item.title + '</a></h4>';
+        appendString += '<small class="text-success">'+item.url.substring(11, (item.url.length)) + '</small>'
         appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+        appendString += '</div><!-- /item -->'
       }
 
       searchResults.innerHTML = appendString;

@@ -7,11 +7,6 @@ title: Blog
 	<div class="container">
 
 		<header>
-			<ul class="breadcrumb"><!-- breadcrumb -->
-				<li><a href="/index.html">Home</a></li>
-				<li class="active">Blog</li>
-			</ul><!-- /breadcrumb -->
-
 			<h2><!-- Page Title -->
 				<strong>Read </strong>Our Posts Below
 			</h2><!-- /Page Title -->
@@ -68,23 +63,23 @@ title: Blog
 						</div>
 
 					</div>
-				</div>
+				</div><br><hr>
+				
 				<!-- /article - image -->
 				{% endfor%}
-				
-				<!-- pagination -->
-				<nav>
-					<ul class="pager">
-						{% if paginator.previous_page %}
-						<li><a href="{{ paginator.previous_page_path }}">Previous</a></li>
-						{% endif %}
-
-						{% if paginator.next_page %}
-						<li><a href="{{ paginator.next_page_path }}">Next</a></li>
-						{% endif %}
-					</ul>
-				</nav>				<!-- /pagination -->
 			</div>
+			<!-- pagination -->
+			<nav>
+				<ul class="pager">
+					{% if paginator.previous_page %}
+						<li><a href="{{ paginator.previous_page_path }}">Previous</a></li>
+					{% endif %}
+
+					{% if paginator.next_page %}
+						<li><a href="{{ paginator.next_page_path }}">Next</a></li>
+					{% endif %}
+				</ul>
+			</nav>				<!-- /pagination -->
 			<!-- /BLOG ARTICLE LIST -->
 
 			<!-- BLOG SIDEBAR -->
@@ -123,9 +118,6 @@ title: Blog
 						<!-- tabs content -->
 						<div class="tab-content">
 							<div id="tab1" class="tab-pane active">
-								<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item" width="800" height="450" src="https://www.youtube.com/embed/HYfLQg4-kVs" frameborder="0" allowfullscreen></iframe>
-								</div>
 								<div class="divider"><!-- divider -->
 									<i class="fa fa-leaf"></i>
 								</div>
