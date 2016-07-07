@@ -31,7 +31,7 @@ To dig deeper, we hosted three Accountability Stacks - workshops where we ask ci
 
 We then needed to take a bit of time to explore possible solutions. To open this process up further, we hosted three dataquests. These events encouraged people to work together in teams and delve deeper into the focus areas that surfaced from the accountability stacks. During the dataquest, the #munifinance hashtag trended on Twitter all day, proving again how important and noteworthy this process is.
 
-<img src="//images/blog/muni-finance-trend-alert.jpg">
+<img src="/images/blog/muni-finance-trend-alert.jpg">
 
 The outputs of these events ranged from data-driven stories to visualisations, prototype apps and even more targeted questions around the data itself and how best to present it in a digestible and productive manner.
 

@@ -13,7 +13,7 @@ In April, Code for South Africa was approached by Ndifuna Ukwazi, a non-profit l
 
 The purpose of the map visualisation was to highlight the lack of sanitation services in informal settlements in Cape Town, and address the City of Cape Town's capital expenditure budget for informal settlement upgrades, which has not increased in eight years. You can explore the map <a href="http://ismaps.org.za/" target="_blank">here</a>.
 
-<a href="http://ismaps.org.za/" target="_blank"><img src="//images/blog/matrix-blog.jpg"></a>
+<a href="http://ismaps.org.za/" target="_blank"><img src="/images/blog/matrix-blog.jpg" width="100%"></a>
 
 The two datasets provided were compiled from data acquired through Promotion of Access to Information (PAIA) requests to the City and contained the following: 
 
@@ -57,7 +57,7 @@ To complete the picture, we added two real life on-the-ground stories of people 
 
 "It's one thing to look at the numbers and be aware that there are no toilets in an informal settlement. It's another to see how Asithandile, a disabled resident of the Kosovo Informal Settlement suffers because he cannot access the temporary toilets by himself," said Guus. 
 
-![](//images/blog/asithandile.jpg)
+![](/images/blog/asithandile.jpg)
 
 Code for South Africa is a civic technology organisation that promotes informed decision making for positive social change. Through [our projects](http://code4sa.org/projects), our recently launched Code for South Africa Data Journalism Academy and Codebridge project space, we bring together civil society organisations, journalists, technologists and government to create tools and stories that address society's challenges. 
 

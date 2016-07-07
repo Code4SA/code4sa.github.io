@@ -4,7 +4,7 @@ author: Siyabonga Africa
 layout: post
 excerpt: |
     The School of Data’s Summer Camp in Potsdam that saw Fellows from countries as far as Peru, Indonesia, Nigeria and South Africa come together (for the first time in the history of the programme) to share and learn from each other before embarking on a journey to grow open data initiatives in their countries.
-   
+image: none
 ---
 
 Last month I was invited to Berlin, Germany, to attend the [Open Knowledge Foundation’s](https://okfn.org/) annual [OKFest](http://2014.okfestival.org/). The event was a confluence of open data, science, technology, media, art ... you name it; enthusiasts and organizations with the common goal of fostering a global open and free society.

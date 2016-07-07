@@ -5,6 +5,7 @@ date: 2015-08-03
 author: SciBraai
 excerpt: |
     Join the Data Quest to tell science stories with SA data.
+image: none
 ---
 
 ## Issued By SciBraai

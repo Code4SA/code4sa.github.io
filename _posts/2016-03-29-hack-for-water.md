@@ -20,7 +20,7 @@ Code for South Africa is working in partnership with the [Department of Water an
 
 As part of a nationwide [#Hack4Water challenge](http://www.hack4water.org.za/) for South Africans to submit innovative solutions to water issues, we are hosting local hackathons across the country to bring everyone together and explore different approaches to the issues caused by this drought.  
 
-<img src="//images/blog/hack4water2.jpg">
+<img src="/images/blog/hack4water2.jpg">
 
 So, what is a hackathon? It’s a short intensive session where teams of people of different disciplines, like: techies, analysts, activists, journalist and others come together and collaborate around an issue to find solutions, tell stories and build tools.
 
@@ -32,4 +32,4 @@ Submit a video entry to the #hack4water challenge. More info: [here](http://www.
 Spread the word! Send, share, start conversations, harass your clever friends: [Facebook](https://www.facebook.com/Hack4Water-181339348908125/?fref=ts) & [Twitter](https://twitter.com/Hack4Water)
 
 So come and join us, we look forward to seeing you there and working with you to find solutions.
-<img src="//images/blog/DWS-header.jpg">
+<img src="/images/blog/DWS-header.jpg">

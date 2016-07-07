@@ -4,7 +4,7 @@ author: Adi Eyal
 title: Working better, together
 excerpt: |
     PoplusCon in Santiago, Chile, was a recent push to try and increase collaboration between the different civic-coding organizations around the world.
-   
+image: none 
 ---
 
 So how can the civic coding community squeeze more productivity out of its limited technical resources? How can our organisations hold great big governments to account on a shoestring budget?

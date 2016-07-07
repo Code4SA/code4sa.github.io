@@ -5,6 +5,7 @@ date: 2015-07-23
 author: Raymond Joseph
 excerpt: |
     Data journalism is a hot buzzword among journalists in South Africa these days, yet very few journalists or newsrooms are actually practicing it. 
+image: none
 ---
 
 Data journalism is a hot buzzword among journalists in South Africa these days, yet very few journalists or newsrooms are actually practicing it.

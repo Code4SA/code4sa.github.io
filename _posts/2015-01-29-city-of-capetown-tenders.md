@@ -12,6 +12,7 @@ extra_js:
   - /js/2015-01-29-city-of-capetown-tenders/CustomTooltip.js
   - /js/d3.v3.min.js
   - /js/2015-01-29-city-of-capetown-tenders/vis.js
+image: none
 ---
 
 <strong>Update:</strong> 4 February 2015

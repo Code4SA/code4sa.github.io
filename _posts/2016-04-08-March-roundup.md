@@ -39,7 +39,7 @@ Some of the articles published by the residents:
 
 The numbers of teachers leaving South Africa is shocking. Khulekani Magubane explores the data.
 
-<img src="//images/blog/missing-people.jpg"/>
+<img src="/images/blog/missing-people.jpg"/>
 In 2015, one of our partners, [Ndifuna Ukwazi](http://nu.org.za), made a freedom information request to the City of Cape Town. Accidentally included in documents release was a geocoded list of all the public toilets in informal settlements. Our data wrangler extraordinaire  Julia Renouprez, in a superhuman effort, created a database of informal settlements, inferred from the location of toilets. Using this data, the Weekend Argus identified a number of settlements that were not counted in the census. This led to the publication of the following two stories:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B_GTrwRo8Q0" frameborder="0" allowfullscreen></iframe>
 

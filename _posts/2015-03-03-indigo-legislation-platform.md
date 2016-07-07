@@ -7,6 +7,7 @@ excerpt: |
   Together with AfricanLII and funding from the Indigo Trust, we're building an
   open-source legislation consolidation and publishng platform. Our goal is to
   help them provide free access to online legislation in Africa.
+image: none
 ---
 
 Together with [AfricanLII](http://africanlii.org) and funding from [the Indigo Trust](http://indigotrust.org.uk),

@@ -4,6 +4,7 @@ title: Comparative shopping at country scale
 author: Adi Eyal
 excerpt: |
     Comparative shopping - at country scale
+image: none
 ---
 
 For poor and working class citizens, the public healthcare system in their countries is the only way that they are able to get medical treatment and medicines that can arrest diahrroea in their children, cure bacterial infections, and treat the scourge of hiv, tb and malaria. These medicines are mostly procured through the ministries of health in each country (or a contracted independent medical stores) and distributed to hospitals and local healthcare clinics. 

@@ -18,6 +18,7 @@ style: |
     }
  
 date: 2015-01-15
+image: none
 ---
 
 I've been playing with a new dataset over the last week. It's amazing what stories you can find in data which are completely unexpected. Last week I found some <a href="/2015/01/08/traffic-fines-highway-robbery.html">interesting revenue models</a> used by a handful of municipalities in the country using their statements of operating revenue and expenditure. This week I have been looking at the history of gender equality in the medical profession. 
@@ -69,8 +70,8 @@ I'm not going to say anymore on this topic since I don't have any personal insig
 
 I'm hoping to beat this dataset with a stick over the next few months to see what else comes out. If there is anything, I'll let you know.
 
-<script src="{{ site.url }}/js/d3.v3.min.js"></script>
-<script src="{{ site.url }}/js/c3.min.js"></script>
+<script src="{{ site.url }}/assets/js/d3.v3.min.js"></script>
+<script src="{{ site.url }}/assets/js/c3.min.js"></script>
 <script>
 var defchart = function(url, bindto) {
     return {

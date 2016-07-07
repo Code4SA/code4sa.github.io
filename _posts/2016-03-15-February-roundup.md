@@ -13,7 +13,7 @@ If January was a busy month, February was downright outrageous. 21 working days,
 ## Data Journalism Academy
 We launched the Code for South Africa data journalism academy. During an initial 2-week intensive bootcamp, journalists were taught to thrust with Excel spreadsheets and parry with data visualisations. Of the 12 who participated, 8 continued after the intensive to join the academy newsroom where they will spend the next 10 weeks gaining real world data journalism experience. The journalists represented the following news outlets: Sunday Times, Business Day, The Daily Dispatch, Financial Mail, Cape Argus and the Weekend Argus. Also attending on a scholarship was a student from the Centre for Film and Media Studies at UCT. Another freelance journalist was also awarded a scholarship to cover tuition and living expenses.
 
-<img src="//images/blog/ddj-academy.jpg"/>
+<img src="/images/blog/ddj-academy.jpg"/>
 <small class="pull-right">Photo credit: Hassel Fallas</small>
 
 [Sarah Evans](https://twitter.com/@sarahpeace6) formerly of the Mail and Guardian joined us as a news editor to run the newsroom. We were also fortunate that [Hassel Fallas](https://twitter.com/@hasselfallas), data news editor of La Nacion in Costa Rica joined us for 4 weeks to provide mentorship on how to run a successful data newsroom. 
@@ -29,7 +29,7 @@ Soon after the launch of the newsroom, the [first story](http://mini.iol.co.za/n
 ## Vote for the Budget
 Through the academy we launched a tool called [Vote for the Budget](http://www.vote4thebudget.org) together with the [International Budget Partnership](www.internationalbudget.org/). Developed as a microsite, its objective was to inform South Africans about their right to make submissions to Parliament about the budget. The tool was released to coincide with the Minister of Finance’s budget speech. It allows users to rank their approval for various decisions incorporated in the national budget. Using these preferences, a template email is generated which is then populated with their answers. Users have the option of sending this email directly to the appropriations committee for consideration.
 
-<img src="//images/blog/vote-for-the-budget.png">
+<img src="/images/blog/vote-for-the-budget.png">
 
 204 submissions were sent through the site to Parliament’s Standing Committee on Appropriations. It was also published nationally in the following publications:
 
@@ -58,19 +58,19 @@ Damian Schlecter's MP attendence tool launched last month on [People's Assembly]
 
 Codebridge has begun to transition from being an office under a bridge to become the centre of the nascent civic tech movement in South Africa.
 
-<img src="//images/blog/codebridge-contrast.png"/>
+<img src="/images/blog/codebridge-contrast.png"/>
 <small class="pull-right">Photo credit: Damian Schlecter</small>
 
 <p>
 We are supporting civic tech startups by providing mentorship, desk space and general support where needed. Project Enable, a pair of occupational therapists and a computer programmer are building a mobile app that will help parents of children with cerebral palsy play with their children and stimulate them by providing examples of various games and exercises. During a 3 day intensive, Richard Gevers from Open Data Durban took them through lean startup process effectively tearing their ideas apart only to help them rebuild.  We plan to extend this pilot by running bi-annual intakes of aspiring civic tech entrepreneurs.
 </p>
-<img src="//images/blog/project-enable.png"/>
+<img src="/images/blog/project-enable.png"/>
 <small class="pull-right">Photo credit: Adi Eyal</small>
 
 ## Code for Cape Town
 We have started working with a group called Code for Cape Town (absolutely no relation to Code for South Africa). They are passionate about teaching young girls to code. Led by Code for South Africa alumnus Jason Norwood-Young, we started [running a module](/2016/03/15/who-runs-the-world-girls.html) to teach these girls about data and how to use it to tell stories. The module was taught over three successive weekends. These girls are sharp. If they are at all representative of the youth, we might actually have a bright future to look forward to.
 
-<img src="//images/blog/code-for-ct.jpg"/>
+<img src="/images/blog/code-for-ct.jpg"/>
 <small class="pull-right">Photo credit: Code for Cape Town</small>
 
 ## Naked Data
@@ -84,7 +84,7 @@ Take [Wazimap](http://www.wazimap.co.za) and tailor it to become a [tool](http:/
 ## African Minds
 
 Ever wondered which universities in Africa publish their own books? Here is an [interactive map](http://www.africanminds.co.za/african-university-presses/) developed by Guus Hoekman.
-<img src="//images/blog/universitypresses.png"/>
+<img src="/images/blog/universitypresses.png"/>
 
 ## Open Bylaws
 

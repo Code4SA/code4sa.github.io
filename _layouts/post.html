@@ -44,17 +44,6 @@ layout: default
 					<div class="col-md-9 col-sm-9">
 
 						<h1>{{page.title}}</h1>
-						{%  if page.image == "none" %}
-						{% else %}
-						<!-- carousel -->
-						<div class="owl-carousel text-center controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "autoPlay": true, "transitionStyle":"fadeUp"}'><!-- transitionStyle: fade, backSlide, goDown, fadeUp,  -->
-							<div class="item">
-								<img src="{{page.image}}" class="img-responsive" alt="img" />
-							</div>
-						</div>
-						{% endif %}
-						<!-- /carousel -->
-
 						<!-- article content -->
 						<article>
 							{{content}}
@@ -62,11 +51,11 @@ layout: default
 
 						<!-- SOCIAL -->
 						<p class="socials">
-							<a href="#" class="rounded-icon social fa fa-facebook"><!-- facebook --></a>
-							<a href="#" class="rounded-icon social fa fa-twitter"><!-- twitter --></a>
-							<a href="#" class="rounded-icon social fa fa-google-plus"><!-- google plus --></a>
-							<a href="#" class="rounded-icon social fa fa-pinterest"><!-- pinterest --></a>
-							<a href="#" class="rounded-icon social fa fa-linkedin"><!-- linkedin --></a>
+							<a href="https://plus.google.com/share?url={{site.url}}{{ page.url }}&hl=en-US" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" target="_blank" class="rounded-icon social fa fa-google-plus"><!-- google plus --></a>
+
+							<a href="https://twitter.com/share?text={{ page.title }}&url={{ page.shorturl }}&via={{page.author}}" class="rounded-icon social fa fa-twitter" target="_blank"><!-- twitter --></a>
+
+							<a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{page.url}}&title={{ page.title }}&source={{ site.title }}" class="rounded-icon social fa fa-linkedin" target="_blank"><!-- linkedin --></a>
 						</p>
 
 						<hr class="half-margins invisible" />

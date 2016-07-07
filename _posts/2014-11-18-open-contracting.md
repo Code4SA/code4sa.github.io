@@ -4,6 +4,7 @@ title: Launch of Open Contracting Standard
 author: Open Contracting Partnership
 excerpt: Standard launched to ensure transparency and efficiency in contracting 
 date: 2014-11-18
+image: none
 ---
 
 [@opencontracting](https://twitter.com/opencontracting)

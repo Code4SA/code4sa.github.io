@@ -4,6 +4,7 @@ author: Adi Eyal
 title: Why our work matters
 excerpt: |
     Occasionally I wonder why our work matters. How does it make our lives easier and promote better engagement with government. I have a sad tale to tell about a garden that I planted which was subsequently destroyed by the council and how I plan to get to the bottom of it.
+image: none
 ---
 
 **[Update 04 October 2015]**

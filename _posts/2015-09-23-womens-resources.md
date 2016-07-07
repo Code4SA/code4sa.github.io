@@ -5,6 +5,7 @@ date: 2015-09-23
 author: Julia Renouprez
 excerpt: |
     Developing Open Data Resources for South African Women
+image: none
 ---
 
 I once heard South Africa described as a country with a legacy of disrespect for women.  Without debating the validity of that, it is certainly true that we have a high incidence of abuse of women, and given poverty and education levels, how easy is it for South African women to find resources in a time of crisis? 
@@ -15,7 +16,7 @@ As a self-confessed data nerd, I was thrilled at the opportunity to plunge my pa
 
 <div class="row p" style="padding-bottom: 20px">
 
-    <a href="https://data.code4sa.org/dataset/Resources-for-South-African-Women/euc9-cu8y" target="_blank"><img src="/img/womansdata.png"></a>
+    <a href="https://data.code4sa.org/dataset/Resources-for-South-African-Women/euc9-cu8y" target="_blank"><img src="/images/blog/womansdata.png"></a>
 
 </div>
 

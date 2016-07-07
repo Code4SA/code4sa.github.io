@@ -15,6 +15,7 @@ extra_style: |
     #chart {
         max-height: 700px;
     }
+image: none
 ---
 
 You often learn a lot about people by looking at data. According to StatsSA in the most recent dataset of marriages and divorces, there were roughly 161,000 civil marriages in 2012. A quick histogram of the wedding month shows that December is the most popular month for getting married. No-one wants to get married in winter.

@@ -4,7 +4,7 @@ layout: post
 author: Jason Norwood-Young
 excerpt: |
     “Failing forward.” Heard of it? It’s baked into the entrepreneurship culture. If you’re an entrepreneur, you’ll be invited to “Fail Fests”, “Fail Confs”, and “Failure Panels”. Speaking to fellow entrepreneurs, you’ll quickly discover how deeply crappy being an entrepreneur really is. Basically, you lurch from one failure to the next, as fast as you can, until you succeed. But if you want a short cut, here are some failure-lessons to learn from in the meantime – and NGOs should be the first organisations to listen up.
-   
+image: none  
 ---
 
 [This article originally appeared on The Daily Maverick](http://www.dailymaverick.co.za/opinionista/2014-08-29-what-ngos-can-learn-from-start-ups-about-failure/)

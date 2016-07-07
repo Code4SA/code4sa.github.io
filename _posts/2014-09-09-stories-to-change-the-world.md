@@ -3,6 +3,7 @@ layout: post
 title: Stories to change the world
 excerpt: Stories define and grow a culture, what if we can harness that power and use them to change the world?
 author: Jennifer Walker
+image: none
 ---
 
 Care to hear a story?

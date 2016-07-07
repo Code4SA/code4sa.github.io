@@ -27,10 +27,10 @@ Visit [speakupmzansi.org.za](http://info.speakupmzansi.org.za/councillor/) or [w
 
 <div class="row p" style="padding-bottom: 20px">
   <div class="col-xs-6">
-    <a href="http://info.speakupmzansi.org.za/councillor/" target="_blank"><img src="/img/ward-cllr-form.png"></a>
+    <a href="http://info.speakupmzansi.org.za/councillor/" target="_blank"><img src="/images/blog/ward-cllr-form.png"></a>
   </div>
   <div class="col-xs-6">
-    <a href="http://info.speakupmzansi.org.za/councillor/" target="_blank"><img src="/img/ward-cllr-result.png"></a>
+    <a href="http://info.speakupmzansi.org.za/councillor/" target="_blank"><img src="/images/blog/ward-cllr-result.png"></a>
   </div>
 </div>
 

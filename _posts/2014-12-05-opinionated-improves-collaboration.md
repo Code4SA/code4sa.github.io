@@ -5,6 +5,7 @@ author: Greg Kempe
 excerpt: |
   We've been making some opinionated choices about our development and deployment practices at Code for South Africa. We've found it improves collaboration and helps us build better products, more quickly.
 date: 2014-12-05
+image: none
 ---
 
 We've been making some [opinionated](http://programmers.stackexchange.com/questions/12182/what-does-opinionated-software-really-mean) choices about our deployment practices at Code for South Africa. We've found it improves collaboration and helps us build better products, more quickly. There are many ways to improve collaboration and opinionated deployments may seem like an odd one. Here's what we're doing and why.

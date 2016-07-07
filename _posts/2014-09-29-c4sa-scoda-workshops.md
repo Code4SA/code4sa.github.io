@@ -3,6 +3,7 @@ layout: post
 title: South African organisations using open data for change
 author: Jason Norwood-Young
 excerpt: Code4SA School of Data Workshops in Cape Town and Johannesburg set four organisations on the path of open data
+image: none
 ---
 
 The open data world is awash with fancy new tools that let journalists and activists dive into data in a way that would have been impossible without a degree in statistical computation five years ago. Great, free, open source software like [Google Spreadsheets](https://docs.google.com/spreadsheet/), [OpenRefine](http://openrefine.org/), [Datawrapper](http://datawrapper.de) and [Infogram](http://infogr.am) give us the power to move from collecting data, through to cleaning data, interviewing data, and visualizing data in relatively simple steps.
