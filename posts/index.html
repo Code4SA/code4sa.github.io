@@ -63,23 +63,23 @@ title: Blog
 						</div>
 
 					</div>
-				</div><br><hr>
-				
+				</div><hr>
 				<!-- /article - image -->
 				{% endfor%}
-			</div>
-			<!-- pagination -->
-			<nav>
-				<ul class="pager">
-					{% if paginator.previous_page %}
+				
+				<!-- pagination -->
+				<nav>
+					<ul class="pager">
+						{% if paginator.previous_page %}
 						<li><a href="{{ paginator.previous_page_path }}">Previous</a></li>
-					{% endif %}
+						{% endif %}
 
-					{% if paginator.next_page %}
+						{% if paginator.next_page %}
 						<li><a href="{{ paginator.next_page_path }}">Next</a></li>
-					{% endif %}
-				</ul>
-			</nav>				<!-- /pagination -->
+						{% endif %}
+					</ul>
+				</nav>				<!-- /pagination -->
+			</div>
 			<!-- /BLOG ARTICLE LIST -->
 
 			<!-- BLOG SIDEBAR -->
@@ -118,9 +118,6 @@ title: Blog
 						<!-- tabs content -->
 						<div class="tab-content">
 							<div id="tab1" class="tab-pane active">
-								<div class="divider"><!-- divider -->
-									<i class="fa fa-leaf"></i>
-								</div>
 								<ul>
 									{% assign items = site.posts | sort: date | reverse %}
 									{% for post in items limit: 10 %}
