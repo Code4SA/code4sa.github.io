@@ -17,7 +17,5 @@ collections:
   our-team:
     output: true
 
-gems: [jekyll-paginate, algoliasearch-jekyll]
-
 paginate: 5
 paginate_path: "/posts/page:num"
