@@ -58,7 +58,9 @@ layout: default
 							<a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{page.url}}&title={{ page.title }}&source={{ site.title }}" class="rounded-icon social fa fa-linkedin" target="_blank"><!-- linkedin --></a>
 						</p>
 
-						<hr class="half-margins invisible" />
+						<footer class="comments">
+							{% include disqus.html %}
+						</footer>
 
 					</div>
 
@@ -125,13 +127,6 @@ layout: default
 			<!-- /BLOG SIDEBAR -->
 
 		</div>
-		<div class="divider"><!-- divider -->
-			<i class="fa fa-leaf"></i>
-		</div>
-
-		<<footer class="comments">
-        {% include disqus.html %}
-      </footer>
 	</div>
 </section>
 <!-- /CONTENT -->
