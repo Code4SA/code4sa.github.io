@@ -13,7 +13,7 @@ layout: default
 			</ul><!-- /breadcrumb -->
 
 			<h2><!-- Page Title -->
-				<strong>Read</strong> Below
+				{{page.title}}
 			</h2><!-- /Page Title -->
 
 		</header>
@@ -105,8 +105,11 @@ layout: default
 							<div id="tab1" class="tab-pane active">
 								<ul>
 									{% assign items = site.posts | sort: date | reverse %}
-									{% for post in items limit: 10 %}
-									<li><a href="{{post.url}}"> {{post.title}}</a> <small>{{post.date | date_to_long_string }}</small></li>
+									{% for post in items limit: 11 %}
+									{% if post.title == page.title %}
+									{% else %}
+									<li><a href="{{post.url}}"> <i class="fa fa-sign-out"></i>{{post.title}}</a> <small>{{post.date | date_to_long_string }}</small></li>
+									{% endif %}
 									{% endfor %}
 								</ul>
 							</div>
@@ -126,13 +129,9 @@ layout: default
 			<i class="fa fa-leaf"></i>
 		</div>
 
-		<div class="row">
-			<div class="col-md-3"></div>
-			<div class="col-md-6">
-			<a class="btn btn-primary btn-block" href="/posts/index.html" role="button">Read More Posts ...</a>
-			</div>
-			<div class="col-md-3"></div>
-		</div><br>
+		<<footer class="comments">
+        {% include disqus.html %}
+      </footer>
 	</div>
 </section>
 <!-- /CONTENT -->
