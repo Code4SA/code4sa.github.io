@@ -36,8 +36,17 @@ layout: default
 						<span class="date">
 							{{page.date | date: "%d"}} <small>{{page.date | date: "%B %Y"}}</small>
 						</span>
+						{% for author in site.data.our-team %}
+						{% if author.name == page.author %}
 						<span class="info hidden-xs">
-							<span class="block"><i class="fa fa-user"></i> BY <a href="blog-author.html">{{page.author}}</a></span>
+							<span class="block"><img src="{{author.image}}" width="100%" alt="{{page.author}}"></span>
+						</span>
+						{% else %}
+
+						{% endif %}
+						{% endfor %}
+						<span class="info hidden-xs">
+							<span class="block"><i class="fa fa-user"></i> BY {{page.author}}</span>
 						</span>
 					</div>
 
