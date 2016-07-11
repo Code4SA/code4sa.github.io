@@ -19,22 +19,22 @@
                   <nav class="nav-main">
 
                     <ul id="topMain" class="nav nav-pills nav-main">
-                     <li class="label">
+                     <li {% if page.title contains "Home" %} class =" label active" {% else %} class="label" {% endif %}>
                         <a href="/index.html">Home</a>
                       </li>
-                      <li class="label">
+                      <li {% if page.url contains "about.html" %} class ="label active" {% else %} class="label" {% endif %}>
                         <a href="/about.html">About Us</a>
                       </li>
-                      <li class="label">
+                      <li {% if page.url contains 'projects.html' %} class ="label active" {% else %} class="label" {% endif %}>
                         <a href="/projects.html">Our Projects</a>
                       </li>
-                      <li class="label">
+                      <li {% if page.title contains "Blog" %} class ="label active" {% else %} class="label" {% endif %}>
                         <a  href="/posts/index.html">Blog</a>
                       </li>
-                      <li class="label">
+                      <li {% if page.url contains "contact.html" %} class ="label active" {% else %} class="label" {% endif %}>
                         <a href="/contact.html">Contact</a>
                       </li>
-                      <li class="label">
+                      <li {% if page.url contains "careers.html" %} class ="label active" {% else %} class="label" {% endif %}>
                         <a href="/careers.html">Careers</a>
                       </li>
                     </ul>
