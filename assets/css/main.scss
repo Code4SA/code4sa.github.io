@@ -51,3 +51,50 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+.client {
+  margin-bottom: 10px;
+
+  img {
+    max-width: 170px;
+    height: auto;
+  }
+
+  &.pushdown img {
+    margin-top: 40px;
+  }
+}
+
+.partner-logo-list {
+   #blacksash-logo {
+       margin-top: 45px;
+   }
+
+   #geekulcha-logo {
+       margin-top: 51px;
+   }
+
+   #icfj-logo {
+       margin-top: -5px;
+   }
+
+   #mma-logo {
+       margin-top: 15px;
+   }
+
+   #odac-logo {
+       margin-top: -15px;
+   }
+
+   #pmg-logo {
+       margin-top: -10px;
+   }
+
+   #sarpam-logo {
+       margin-top: 5px;
+   }
+
+   #freedomhouse-logo {
+       margin-top: 40px;
+   }
+}

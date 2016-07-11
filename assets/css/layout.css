@@ -71,58 +71,41 @@ section {
 	}
 
 /* clients */
-section#work, section#get-involved, section#github-issues, section#services, section#clients {
-	padding: 30px 0px 30px 0px;
+.client { margin-bottom: 10px; }
+.client img { max-width: 170px; height: auto; }
+.client.pushdown img { margin-top: 40px; }
+.partner-logo-list {
+
+   #blacksash-logo {
+       margin-top: 45px;
+   }
+
+   #geekulcha-logo {
+       margin-top: 51px;
+   }
+
+
+   #mma-logo {
+       margin-top: 15px;
+   }
+
+   #odac-logo {
+       margin-top: -15px;
+   }
+
+   #pmg-logo {
+       margin-top: -10px;
+   }
+
+   #sarpam-logo {
+       margin-top: 5px;
+   }
+
+   #freedomhouse-logo {
+       margin-top: 40px;
+   }
 }
 
-.project-images {
-    text-align: center;
-}
-
-section#github-issues {
-	background: white;
-	height: auto;
-    padding-bottom: 0px;
-}
-
-section#github-issues iframe {
-  height: 600px;
-}
-
-section.service-box {
-    margin-bottom: 0px;
-	padding-bottom: 0px;
-}
-
-section#clients .client-logos {
-    padding-top: 10px;
-}
-
-section#clients .client {
-    text-align: center
-    line-height: 60px;
-}
-
-section#clients .client a {
-    padding-right: 50px;
-}
-
-.partner-logo-list #blacksash-logo {
-  margin-top: 45px; }
-.partner-logo-list #geekulcha-logo {
-  margin-top: 51px; }
-.partner-logo-list #icfj-logo {
-  margin-top: -5px; }
-.partner-logo-list #mma-logo {
-  margin-top: 15px; }
-.partner-logo-list #odac-logo {
-  margin-top: -15px; }
-.partner-logo-list #pmg-logo {
-  margin-top: -10px; }
-.partner-logo-list #sarpam-logo {
-  margin-top: 5px; }
-.partner-logo-list #freedomhouse-logo {
-  margin-top: 40px; }
 
 section header {
 	display:block;
