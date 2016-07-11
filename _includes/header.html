@@ -25,16 +25,16 @@
                       <li {% if page.url contains "about.html" %} class ="label active" {% else %} class="label" {% endif %}>
                         <a href="/about.html">About Us</a>
                       </li>
-                      <li {% if page.url contains 'projects.html' %} class ="label active" {% else %} class="label" {% endif %}>
+                      <li {% if page.url contains 'projects.html' or page.url contains "/projects/" %} class ="label active" {% else %} class="label" {% endif %}>
                         <a href="/projects.html">Our Projects</a>
                       </li>
-                      <li {% if page.title contains "Blog" %} class ="label active" {% else %} class="label" {% endif %}>
+                      <li {% if page.title contains "Blog" or page.layout contains "post" %} class ="label active" {% else %} class="label" {% endif %}>
                         <a  href="/posts/index.html">Blog</a>
                       </li>
-                      <li {% if page.url contains "contact.html" %} class ="label active" {% else %} class="label" {% endif %}>
+                      <li {% if page.url contains "/contact.html" %} class ="label active" {% else %} class="label" {% endif %}>
                         <a href="/contact.html">Contact</a>
                       </li>
-                      <li {% if page.url contains "careers.html" %} class ="label active" {% else %} class="label" {% endif %}>
+                      <li {% if page.url contains "/careers.html" %} class ="label active" {% else %} class="label" {% endif %}>
                         <a href="/careers.html">Careers</a>
                       </li>
                     </ul>
