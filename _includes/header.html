@@ -22,11 +22,15 @@
                      <li {% if page.title contains "Home" %} class =" label active" {% else %} class="label" {% endif %}>
                         <a href="/index.html">Home</a>
                       </li>
-                      <li {% if page.url contains "about.html" %} class ="label active" {% else %} class="label" {% endif %}>
-                        <a href="/about.html">About Us</a>
+                      <li {% if page.url contains "about.html" %} class ="dropdownlabel active" {% else %} class="dropdown label" {% endif %}>
+                        <a class="dropdown-toggle" href="/about.html">About Us</a>
+                         <ul class="dropdown-menu">
+                          <li><a href="/about.html/#what_we_do">What we do</a></li>
+                          <li><a href="/about.html/#team">Who we are</a></li>
+                        </ul>
                       </li>
                       <li {% if page.url contains 'projects.html' or page.url contains "/projects/" %} class ="label active" {% else %} class="label" {% endif %}>
-                        <a href="/projects.html">Our Projects</a>
+                        <a href="/projects.html">Tools</a>
                       </li>
                       <li {% if page.title contains "Blog" or page.layout contains "post" %} class ="label active" {% else %} class="label" {% endif %}>
                         <a  href="/posts/index.html">Blog</a>
