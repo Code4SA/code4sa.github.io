@@ -21,7 +21,7 @@ title: Team
 	<div class="container">
 		<h3>Meet the <strong>Code for South Africans</strong></h3>
 
-		<div class="row margin-top60">
+		<div class="row margin-top60 people-list">
 			{% for person in site.data.our-team %}
 			{% if person.type == "current" %}
 			<div class="col-sm-4 col-md-3"><!-- member -->
@@ -58,7 +58,7 @@ title: Team
 	<div class="container">
 		<h3>People we've <strong>worked with</strong></h3>
 
-		<div class="row margin-top60"><!--Alumni-->
+		<div class="row margin-top60 people-list"><!--Alumni-->
 			{% for person in site.data.our-team %}
 			{% if person.type == "alumni" %}
 			<div class="col-sm-4 col-md-3"><!-- member -->
@@ -96,7 +96,7 @@ title: Team
 	<div class="container">
 		<h3><strong>Smart people</strong> we consult</h3>
 
-		<div class="row margin-top60"><!--Smart people we consult -->
+		<div class="row margin-top60 people-list"><!--Smart people we consult -->
 			{% for person in site.data.our-team %}
 			{% if person.type == "consultant" %}
 			<div class="col-sm-4 col-md-3"><!-- member -->

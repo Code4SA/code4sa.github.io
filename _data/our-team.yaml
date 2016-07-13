@@ -1,5 +1,7 @@
 ---
-#type (current, alumni, consultant)
+# type (current, alumni, consultant)
+# NB: images should be 230x230 (no bigger than 230px high)
+#     use: convert file.jpg -resize 230x230\> file.jpg
 - type: current
   name: Adi Eyal
   image: /images/team/team_adi.jpg
