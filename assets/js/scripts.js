@@ -737,7 +737,7 @@ function _masonry() {
 
 				destination.isotope({
 					itemSelector: 	"li",
-					layoutMode: 	'sloppyMasonry'
+					layoutMode: 	'fitRows'
 				});
 
 				_el.find("a").click(function(e) {
