@@ -63,66 +63,32 @@ title: Home
 			<div class="row">
 				<ul class="sort-destination isotope" data-sort-id="isotope-list">
 
-					<li class="isotope-item col-sm-6 col-md-4 map"><!-- item -->
+					{% for project in site.projects %}
+					{% if project.featured %}
+					<li class="isotope-item col-sm-6 col-md-4">
 						<div class="item-box text-center">
 							<figure>
-								<a class="item-hover" href="/projects/ismatrix.html">
+								<a class="item-hover" href="{{ project.url }}">
 									<span class="overlay color2"></span>
 									<span class="inner">
 										<span class="block fa fa-plus fsize20"></span>
 										<strong>PROJECT</strong> DETAILS
 									</span>
 								</a>
-								<img class="img-responsive" src="/images/projects/is.png" width="260" height="260" alt="">
+								<img class="img-responsive" src="{{ project.image }}" width="260" height="260" alt="">
 							</figure>
 							<div class="item-box-desc">
-								<h4>Informal Settlements Matrix</h4>
-								<small class="styleColor">29 June, 2014</small>
+								<h4>{{ project.title }}</h4>
 							</div>
 						</div>
 					</li>
-
-					<li class="isotope-item col-sm-6 col-md-4 gov"><!-- item -->
-						<div class="item-box text-center">
-							<figure>
-								<a class="item-hover" href="/projects/municipal-finance.html">
-									<span class="overlay color2"></span>
-									<span class="inner">
-										<span class="block fa fa-plus fsize20"></span>
-										<strong>PROJECT</strong> DETAILS
-									</span>
-								</a>
-								<img class="img-responsive" src="/images/projects/municipal-finance.jpg" width="260" height="260" alt="">
-							</figure>
-							<div class="item-box-desc">
-								<h4>Municipal Finance Data</h4>
-								<small class="styleColor">29 June, 2014</small>
-							</div>
-						</div><br>
-						<a href="/projects.html" class="btn btn-info center-block">More tools ...</a>
-					</li>
-
-					<li class="isotope-item col-sm-6 col-md-4 map"><!-- item -->
-						<div class="item-box text-center">
-							<figure>
-								<a class="item-hover" href="/projects/mapit.html">
-									<span class="overlay color2"></span>
-									<span class="inner">
-										<span class="block fa fa-plus fsize20"></span>
-										<strong>PROJECT</strong> DETAILS
-									</span>
-								</a>
-								<img class="img-responsive" src="/images/projects/mapit.png" width="260" height="260" alt="">
-							</figure>
-							<div class="item-box-desc">
-								<h4>Mapit.code4sa.org</h4>
-								<small class="styleColor">29 June, 2014</small>
-							</div>
-						</div>
-					</li>
+					{% endif %}
+					{% endfor %}
 
 				</ul>
 			</div>
+
+			<a href="/projects/" class="btn btn-primary btn-lg">Explore our tools</a>
 		</div>
 	</section>
 
