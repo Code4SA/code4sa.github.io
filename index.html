@@ -1,201 +1,192 @@
 ---
 layout: default
-title: Home
 ---
 
-<body>
-	<div id="wrapper">
+<!-- REVOLUTION SLIDER -->
+<div class="slider fullwidthbanner-container roundedcorners">
+	<div class="fullwidthbanner">
+		<ul class="hide">
 
-		<!-- REVOLUTION SLIDER -->
-		<div class="slider fullwidthbanner-container roundedcorners">
-			<div class="fullwidthbanner">
-				<ul class="hide">
+			<!-- SLIDE  -->
+			<li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-saveperformance="on" >
 
-					<!-- SLIDE  -->
-					<li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-saveperformance="on" >
+				<img src="/images/head.jpg" data-lazyload="/images/head.jpg" alt="" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" style="width: 100%; height: 100%; " />
 
-						<img src="/images/head.jpg" data-lazyload="/images/head.jpg" alt="" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" style="width: 100%; height: 100%; " />
-
-						<div class="tp-caption large_bold_white block_styleColor lfl tp-resizeme start" 
-						data-x="70" 
-						data-y="216" 
-						data-speed="750" 
-						data-start="1400" 
-						data-easing="easeOutExpo" 
-						data-splitin="none" 
-						data-splitout="none" 
-						data-elementdelay="0.1" 
-						data-endelementdelay="0.1" 
-						data-endspeed="300">We use data and technology <br>to promote informed decision-making <br>for social good. </div>
-					</li>
-				</ul>
-			</div>
-		</div>
+				<div class="tp-caption large_bold_white block_styleColor lfl tp-resizeme start" 
+				data-x="70" 
+				data-y="216" 
+				data-speed="750" 
+				data-start="1400" 
+				data-easing="easeOutExpo" 
+				data-splitin="none" 
+				data-splitout="none" 
+				data-elementdelay="0.1" 
+				data-endelementdelay="0.1" 
+				data-endspeed="300">We use data and technology <br>to promote informed decision-making <br>for social good. </div>
+			</li>
+		</ul>
 	</div>
-	<!-- /REVOLUTION SLIDER -->
+</div>
+<!-- /REVOLUTION SLIDER -->
 
-	<section>
-		<div class="container">
-			<header>
-				<h2>
-					Welcome to 
-					<span class="word-rotator" data-delay="3000"><!-- word rotator - default delay: 2000. Change rotating delay: data-delay="5000" -->
-						<span class="items bold">
-							<span><em>Code for South Africa.</em></span>
-							<span><em>Open Data.</em></span>
-							<span><em>Civic Technology.</em></span>
-							<span><em>Data Journalism.</em></span>
-						</span>
-					</span><!-- /word rotator -->
-				</h2>
-				<div class="row">
-					<div class="col-md-9">
-						<p class="lead">Code for South Africa is a non-profit civic technology lab. We use data and technology to <b>promote informed decision-making</b> that drives <b>social change</b>. Our base of operations is Codebridge in Cape Town where we are helping to create a civic technology movement.</p>
-					</div>
-			</header>
-		</div><!--end of container-->
-	</section>
-
-	<section class="alternate">
-		<div id="portfolio" class="container">
-			<h2>Check out some of our <b>tools</b></h2>
-
+<section>
+	<div class="container">
+		<header>
+			<h2>
+				Welcome to 
+				<span class="word-rotator" data-delay="3000"><!-- word rotator - default delay: 2000. Change rotating delay: data-delay="5000" -->
+					<span class="items bold">
+						<span><em>Code for South Africa.</em></span>
+						<span><em>Open Data.</em></span>
+						<span><em>Civic Technology.</em></span>
+						<span><em>Data Journalism.</em></span>
+					</span>
+				</span><!-- /word rotator -->
+			</h2>
 			<div class="row">
-				<ul class="sort-destination isotope" data-sort-id="isotope-list">
+				<div class="col-md-9">
+					<p class="lead">Code for South Africa is a non-profit civic technology lab. We use data and technology to <b>promote informed decision-making</b> that drives <b>social change</b>. Our base of operations is Codebridge in Cape Town where we are helping to create a civic technology movement.</p>
+				</div>
+		</header>
+	</div><!--end of container-->
+</section>
 
-					{% for project in site.projects %}
-					{% if project.featured %}
-					<li class="isotope-item col-sm-6 col-md-4">
-						<div class="item-box text-center">
-							<figure>
-								<a class="item-hover" href="{{ project.url }}">
-									<span class="overlay color2"></span>
-									<span class="inner">
-										<span class="block fa fa-plus fsize20"></span>
-										<strong>PROJECT</strong> DETAILS
-									</span>
-								</a>
-								<img class="img-responsive" src="{{ project.image }}" width="260" height="260" alt="">
-							</figure>
-							<div class="item-box-desc">
-								<h4>{{ project.title }}</h4>
-							</div>
+<section class="alternate">
+	<div id="portfolio" class="container">
+		<h2>Check out some of our <b>tools</b></h2>
+
+		<div class="row">
+			<ul class="sort-destination isotope" data-sort-id="isotope-list">
+
+				{% for project in site.projects %}
+				{% if project.featured %}
+				<li class="isotope-item col-sm-6 col-md-4">
+					<div class="item-box text-center">
+						<figure>
+							<a class="item-hover" href="{{ project.url }}">
+								<span class="overlay color2"></span>
+								<span class="inner">
+									<span class="block fa fa-plus fsize20"></span>
+									<strong>PROJECT</strong> DETAILS
+								</span>
+							</a>
+							<img class="img-responsive" src="{{ project.image }}" width="260" height="260" alt="">
+						</figure>
+						<div class="item-box-desc">
+							<h4>{{ project.title }}</h4>
 						</div>
-					</li>
-					{% endif %}
-					{% endfor %}
+					</div>
+				</li>
+				{% endif %}
+				{% endfor %}
 
-				</ul>
-			</div>
-
-			<a href="/projects/" class="btn btn-primary btn-lg">Explore our tools</a>
+			</ul>
 		</div>
-	</section>
 
-	<!--Donors-->
-	<section>
-		<div class="container">
-			<h2>Our <b>Donors</b></h2>
+		<a href="/projects/" class="btn btn-primary btn-lg">Explore our tools</a>
+	</div>
+</section>
 
-			<div class="row text-center">
-				<div class="col-sm-4 client">
-					<a href="http://indigotrust.org.uk/"><img src="/images/partners/partner_indigo_trust.png" alt="The Indigo Trust"></a>
+<!--Donors-->
+<section>
+	<div class="container">
+		<h2>Our <b>Donors</b></h2>
+
+		<div class="row text-center">
+			<div class="col-sm-4 client">
+				<a href="http://indigotrust.org.uk/"><img src="/images/partners/partner_indigo_trust.png" alt="The Indigo Trust"></a>
+			</div>
+			<div class="col-sm-4 client">
+				<a href="http://osf.org.za/"><img src="/images/partners/partner_osf.jpg" alt="Open Society Foundation for South Africa"></a>
+			</div>
+			<div class="col-sm-4 client">
+				<a href="http://omidyar.com"><img src="/images/partners/omidyar.jpg" alt="Omidyar Network"></a>
+			</div>
+		</div><!-- Donors -->
+	</div><!--Container-->
+</section>
+
+<section>
+	<div class="container partner-logo-list">
+		<h2>Our <b>Partners</b></h2>
+
+		<div class="row client-logos text-center">
+			<div id="blacksash-logo" class="col-sm-3 client">
+				<a href="https://www.blacksash.org.za"><img src="/images/partners/blacksash.png" alt="Black Sash"></a>
+			</div>
+			<div id="freedomhouse-logo" class="col-sm-3 client">
+				<a href="https://freedomhouse.org/"><img src="/images/partners/freedomhouse.png" alt="Freedom House"></a>
+			</div>
+			<div id="geekulcha-logo" class="col-sm-3 client">
+				<a href="http://geekulcha.com"><img src="/images/partners/geekulcha.jpg"
+					alt="Geekulcha"></a>
 				</div>
-				<div class="col-sm-4 client">
-					<a href="http://osf.org.za/"><img src="/images/partners/partner_osf.jpg" alt="Open Society Foundation for South Africa"></a>
+				<div id="icfj-logo" class="col-sm-3 client">
+					<a href="http://www.icfj.org/"><img src="/images/partners/icfj.png" alt="International Centre for Journalists" style="margin-top: -55px"></a>
 				</div>
-				<div class="col-sm-4 client">
-					<a href="http://omidyar.com"><img src="/images/partners/omidyar.jpg" alt="Omidyar Network"></a>
+			</div>
+			<div class="row client-logos text-center">
+				<div id="mma-logo" class="col-sm-3 client pushdown">
+					<a href="http://www.mediamonitoringafrica.org/"><img src="/images/partners/mma.png" alt="Media Monitoring Africa" style="margin-top: 70px"></a>
 				</div>
-			</div><!-- Donors -->
-		</div><!--Container-->
+				<div class="col-sm-3 client pushdown">
+					<a href="http://www.meetup.com/Open-Data-Durban-Meetup/"><img src="/images/partners/opendatadurban.png" alt="Open Data Durban"></a>
+				</div>
+				<div id="odac-logo" class="col-sm-3 client pushdown">
+					<a href="http://opendemocracy.org.za"><img src="/images/partners/partner_odac.png" alt="Open Democracy Advice Centre" style="margin-top: 28px"></a>
+				</div>
+				<div id="pmg-logo" class="col-sm-3 client">
+					<a href="http://www.pmg.org.za"><img src="/images/partners/partner_pmg.png" alt="Parliamentary Monitoring Group" style="margin-top: 5px"></a>
+				</div>
+			</div>
+			<div class="row client-logos text-center">
+				<div id="sarpam-logo" class="col-sm-3 client pushdown">
+					<a href="http://www.sarpam.net/" ><img src="/images/partners/sarpam.png" alt="SARPAM" style="margin-top: 50px"></a>
+				</div>
+				<div class="col-sm-3 client pushdown">
+					<a href="http://schoolofdata.org/"><img src="/images/partners/school-of-data.png" alt="School of Data"></a>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section>
 		<div class="container partner-logo-list">
-			<h2>Our <b>Partners</b></h2>
+			<h2>With <b>Thanks To</b></h2>
+
+			<!--Client Logo images must be 170px by 100px-->
 
 			<div class="row client-logos text-center">
-				<div id="blacksash-logo" class="col-sm-3 client">
-					<a href="https://www.blacksash.org.za"><img src="/images/partners/blacksash.png" alt="Black Sash"></a>
+				<div class="col-sm-3 client pushdown">
+					<a href="http://aws.amazon.com/what-is-cloud-computing"><img src="http://awsmedia.s3.amazonaws.com/AWS_Logo_PoweredBy_127px.png" alt="Powered by AWS Cloud Computing"></a>
 				</div>
-				<div id="freedomhouse-logo" class="col-sm-3 client">
-					<a href="https://freedomhouse.org/"><img src="/images/partners/freedomhouse.png" alt="Freedom House"></a>
+
+				<div class="col-sm-3 client pushdown">
+					<a href="https://github.com"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Logo.png" alt="GitHub"></a>
 				</div>
-				<div id="geekulcha-logo" class="col-sm-3 client">
-					<a href="http://geekulcha.com"><img src="/images/partners/geekulcha.jpg"
-						alt="Geekulcha"></a>
-					</div>
-					<div id="icfj-logo" class="col-sm-3 client">
-						<a href="http://www.icfj.org/"><img src="/images/partners/icfj.png" alt="International Centre for Journalists" style="margin-top: -55px"></a>
-					</div>
+
+				<div class="col-sm-3 client pushdown">
+					<a href="http://www.pivotaltracker.com/"><img src="http://www.pivotaltracker.com/wp-content/themes/trackery/images/logo_main.png" alt="Pivotal Tracker"></a>
 				</div>
-				<div class="row client-logos text-center">
-					<div id="mma-logo" class="col-sm-3 client pushdown">
-						<a href="http://www.mediamonitoringafrica.org/"><img src="/images/partners/mma.png" alt="Media Monitoring Africa" style="margin-top: 70px"></a>
-					</div>
-					<div class="col-sm-3 client pushdown">
-						<a href="http://www.meetup.com/Open-Data-Durban-Meetup/"><img src="/images/partners/opendatadurban.png" alt="Open Data Durban"></a>
-					</div>
-					<div id="odac-logo" class="col-sm-3 client pushdown">
-						<a href="http://opendemocracy.org.za"><img src="/images/partners/partner_odac.png" alt="Open Democracy Advice Centre" style="margin-top: 28px"></a>
-					</div>
-					<div id="pmg-logo" class="col-sm-3 client">
-						<a href="http://www.pmg.org.za"><img src="/images/partners/partner_pmg.png" alt="Parliamentary Monitoring Group" style="margin-top: 5px"></a>
-					</div>
-				</div>
-				<div class="row client-logos text-center">
-					<div id="sarpam-logo" class="col-sm-3 client pushdown">
-						<a href="http://www.sarpam.net/" ><img src="/images/partners/sarpam.png" alt="SARPAM" style="margin-top: 50px"></a>
-					</div>
-					<div class="col-sm-3 client pushdown">
-						<a href="http://schoolofdata.org/"><img src="/images/partners/school-of-data.png" alt="School of Data"></a>
-					</div>
+
+				<div class="col-sm-3 client pushdown">
+					<a href="https://slack.com"><img src="https://brandfolder.com/slack/assets/wcneqwsf" alt="Slack"></a>
 				</div>
 			</div>
-		</section>
 
-		<section>
-			<div class="container partner-logo-list">
-				<h2>With <b>Thanks To</b></h2>
+			<div class="row client-logos text-center">
 
-				<!--Client Logo images must be 170px by 100px-->
-
-				<div class="row client-logos text-center">
-					<div class="col-sm-3 client pushdown">
-						<a href="http://aws.amazon.com/what-is-cloud-computing"><img src="http://awsmedia.s3.amazonaws.com/AWS_Logo_PoweredBy_127px.png" alt="Powered by AWS Cloud Computing"></a>
-					</div>
-
-					<div class="col-sm-3 client pushdown">
-						<a href="https://github.com"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Logo.png" alt="GitHub"></a>
-					</div>
-
-					<div class="col-sm-3 client pushdown">
-						<a href="http://www.pivotaltracker.com/"><img src="http://www.pivotaltracker.com/wp-content/themes/trackery/images/logo_main.png" alt="Pivotal Tracker"></a>
-					</div>
-
-					<div class="col-sm-3 client pushdown">
-						<a href="https://slack.com"><img src="https://brandfolder.com/slack/assets/wcneqwsf" alt="Slack"></a>
-					</div>
+				<div class="col-sm-3 client">
+					<a href="http://www.socrata.com"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Socrata_logo.png?uselang=en-gb" alt="Socrata" style="margin-top: 50px"></a>
 				</div>
 
-				<div class="row client-logos text-center">
+				<div class="col-sm-3 client pushdown">
+					<a href="http://toggl.com"><img src="http://blog.toggl.com/wp-content/uploads/2015/04/toggl-logo-light.png" alt="Toggl"></a>
+				</div>
 
-					<div class="col-sm-3 client">
-						<a href="http://www.socrata.com"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Socrata_logo.png?uselang=en-gb" alt="Socrata" style="margin-top: 50px"></a>
-					</div>
-
-					<div class="col-sm-3 client pushdown">
-						<a href="http://toggl.com"><img src="http://blog.toggl.com/wp-content/uploads/2015/04/toggl-logo-light.png" alt="Toggl"></a>
-					</div>
-
-					<div class="col-sm-3 client">
-						<a href="http://xero.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Xero-logo-hires-RGB.png/240px-Xero-logo-hires-RGB.png" alt="Xero"></a>
-					</div>
+				<div class="col-sm-3 client">
+					<a href="http://xero.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Xero-logo-hires-RGB.png/240px-Xero-logo-hires-RGB.png" alt="Xero"></a>
 				</div>
 			</div>
-		</section>
-
-
-	</div>
-</body>
+		</div>
+	</section>
