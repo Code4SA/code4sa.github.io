@@ -1,57 +1,57 @@
-          <div id="header" class="sticky affix-top"> <!-- class="sticky" for sticky menu -->
+<div id="header" class="sticky affix-top"> <!-- class="sticky" for sticky menu -->
 
-            <!-- Top Nav -->
-            <header id="topNav">
-              <div class="container">
+  <!-- Top Nav -->
+  <header id="topNav">
+    <div class="container">
 
-                <!-- Logo -->
-                <a class="logo" href="/index.html">
-                  <img src="/images/logo.png" height="65" alt="" />
-                </a>
+      <!-- Logo -->
+      <a class="logo" href="/index.html">
+        <img src="/images/logo.png" height="65" alt="" />
+      </a>
 
-                <!-- Mobile Menu Button -->
-                <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
-                  <i class="fa fa-bars"></i>
-                </button>
+      <!-- Mobile Menu Button -->
+      <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
 
-                <!-- Top Nav -->
-                <div class="navbar-collapse nav-main-collapse collapse pull-right">
-                  <nav class="nav-main">
+      <!-- Top Nav -->
+      <div class="navbar-collapse nav-main-collapse collapse pull-right">
+        <nav class="nav-main">
 
-                    <ul id="topMain" class="nav nav-pills nav-main">
-                     <li {% if page.title contains "Home" %} class =" label active" {% else %} class="label" {% endif %}>
-                        <a href="/index.html">Home</a>
-                      </li>
-                      <li {% if page.url contains "about.html" %} class ="dropdown label active" {% else %} class="dropdown label" {% endif %}>
-                        <a class="dropdown-toggle" href="/about.html">About Us</a>
-                         <ul class="dropdown-menu">
-                          <li><a href="/about.html/#what_we_do">What we do</a></li>
-                          <li><a href="/about.html/#team">Who we are</a></li>
-                        </ul>
-                      </li>
-                      <li {% if page.url contains 'projects.html' or page.url contains "/projects/" %} class ="label active" {% else %} class="label" {% endif %}>
-                        <a href="/projects.html">Tools</a>
-                      </li>
-                      <li {% if page.title contains "Blog" or page.layout contains "post" %} class ="label active" {% else %} class="label" {% endif %}>
-                        <a  href="/posts/index.html">Blog</a>
-                      </li>
-                      <li {% if page.url contains "/contact.html" %} class ="label active" {% else %} class="label" {% endif %}>
-                        <a href="/contact.html">Contact</a>
-                      </li>
-                      <li {% if page.url contains "/careers.html" %} class ="label active" {% else %} class="label" {% endif %}>
-                        <a href="/careers.html">Careers</a>
-                      </li>
-                      <li class="label">
-                        <a href="http://www.codebridge.co.za/" target="_blank">Community</a>
-                      </li>
-                    </ul>
+          <ul id="topMain" class="nav nav-pills nav-main">
+           <li {% if page.title contains "Home" %} class =" label active" {% else %} class="label" {% endif %}>
+              <a href="/index.html">Home</a>
+            </li>
+            <li {% if page.url contains "about.html" %} class ="dropdown label active" {% else %} class="dropdown label" {% endif %}>
+              <a class="dropdown-toggle" href="/about.html">About Us</a>
+               <ul class="dropdown-menu">
+                <li><a href="/about.html">What we do</a></li>
+                <li><a href="/team.html">Meet the Team</a></li>
+              </ul>
+            </li>
+            <li {% if page.url contains 'projects.html' or page.url contains "/projects/" %} class ="label active" {% else %} class="label" {% endif %}>
+              <a href="/projects.html">Tools</a>
+            </li>
+            <li {% if page.title contains "Blog" or page.layout contains "post" %} class ="label active" {% else %} class="label" {% endif %}>
+              <a  href="/blog/index.html">Blog</a>
+            </li>
+            <li {% if page.url contains "/contact.html" %} class ="label active" {% else %} class="label" {% endif %}>
+              <a href="/contact.html">Contact</a>
+            </li>
+            <li {% if page.url contains "/careers.html" %} class ="label active" {% else %} class="label" {% endif %}>
+              <a href="/careers.html">Careers</a>
+            </li>
+            <li class="label">
+              <a href="http://www.codebridge.co.za/" target="_blank">Community</a>
+            </li>
+          </ul>
 
-                  </nav>
-                </div>
-                <!-- /Top Nav -->
+        </nav>
+      </div>
+      <!-- /Top Nav -->
 
-              </div><!-- /.container -->
-            </header>
-            <!-- /Top Nav -->
+    </div><!-- /.container -->
+  </header>
+  <!-- /Top Nav -->
 
-          </div>
+</div>

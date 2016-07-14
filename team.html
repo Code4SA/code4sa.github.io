@@ -1,0 +1,155 @@
+---
+layout: default
+title: Team
+---
+<!-- PAGE TOP -->
+<section class="page-title">
+	<div class="container">
+
+		<header>
+			<h2><!-- Page Title -->
+				Our <strong>Team</strong>
+			</h2><!-- /Page Title -->
+		</header>
+	</div>			
+</section>
+<!-- /PAGE TOP -->
+
+
+<!-- CONTENT -->
+<section>
+	<div class="container">
+		<h3>Meet the <strong>Code for South Africans</strong></h3>
+
+		<div class="row margin-top60 people-list">
+			{% for person in site.data.our-team %}
+			{% if person.type == "current" %}
+			<div class="col-sm-4 col-md-3"><!-- member -->
+				<div class="box-content thumbnail text-center">
+					<span class="item-image">
+						<img class="img-responsive" src="{{person.image}}" alt="">
+					</span>
+					<div class="caption text-left">
+
+						<div class="clearfix margin-bottom10">
+							<div class="pull-left">
+								<h4 class="nomargin">{{person.name}}
+									<small class="block">{{person.pos}}</small>
+								</h4>
+							</div>
+							<div class="pull-right">
+								{% if person.social == "none" %}
+								
+								{% else %}
+								<a href="{{person.social}}" target="_blank" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /member -->
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="alternate">
+	<div class="container">
+		<h3>People we've <strong>worked with</strong></h3>
+
+		<div class="row margin-top60 people-list"><!--Alumni-->
+			{% for person in site.data.our-team %}
+			{% if person.type == "alumni" %}
+			<div class="col-sm-4 col-md-3"><!-- member -->
+				<div class="box-content thumbnail text-center">
+					<span class="item-image">
+						<img class="img-responsive" src="{{person.image}}" alt="">
+					</span>
+					<div class="caption text-left">
+
+						<div class="clearfix margin-bottom10">
+							<div class="pull-left">
+								<h4 class="nomargin">{{person.name}}
+									<small class="block">{{person.pos}}</small>
+								</h4>
+							</div>
+							<div class="pull-right">
+								{% if person.social == "none" %}
+								
+								{% else %}
+								<a href="{{person.social}}" target="_blank" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
+								{% endif %}
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div><!-- /member -->
+			{% endif %}
+			{% endfor %}
+		</div><!--end of alumni-->
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<h3><strong>Smart people</strong> we consult</h3>
+
+		<div class="row margin-top60 people-list"><!--Smart people we consult -->
+			{% for person in site.data.our-team %}
+			{% if person.type == "consultant" %}
+			<div class="col-sm-4 col-md-3"><!-- member -->
+				<div class="box-content thumbnail text-center">
+					<span class="item-image">
+						<img class="img-responsive" src="{{person.image}}" alt="">
+					</span>
+					<div class="caption text-left">
+
+						<div class="clearfix margin-bottom10">
+							<div class="pull-left">
+								<h4 class="nomargin">{{person.name}}
+									<small class="block">{{person.pos}}</small>
+								</h4>
+							</div>
+							<div class="pull-right">
+								{% if person.social == "none" %}
+								
+								{% else %}
+								<a href="{{person.social}}" target="_blank" class="btn ico-only btn-twitter btn-xs"><i class="fa fa-twitter"></i></a>
+								{% endif %}
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div><!-- /member -->
+			{% endif %}
+			{% endfor %}
+		</div>
+		<!-- /the team -->
+
+	</div>
+</section>
+<!-- /CONTENT -->
+
+
+<!-- CALLOUT -->
+<div class="callout styleBackgroundColor"><!-- add "styleBackgroundColor" class for colored background and white text OR "dark" for a dark callout -->
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-9"><!-- title + shortdesc -->
+				<h3>Want to be part of our team?</h3>
+				<p>If so, click to join now, and be part of our dynamic team!</p>
+			</div>
+
+			<div class="col-md-3"><!-- button -->
+				<a href="/careers.html" class="btn btn-primary btn-lg">Join Our Team</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- /CALLOUT -->
