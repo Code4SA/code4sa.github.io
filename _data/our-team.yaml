@@ -1,0 +1,143 @@
+---
+# type (current, alumni, consultant)
+# NB: images should be 230x230 (no bigger than 230px high)
+#     use: convert file.jpg -resize 230x230\> file.jpg
+- type: current
+  name: Adi Eyal
+  image: /images/team/team_adi.jpg
+  pos: Data Evangelist
+  social: https://twitter.com/@soapsudtycoon
+
+- type: current
+  name: Gabriella Razzano
+  image: /images/team/team_gabriella.jpg
+  pos: Policy and Strategy
+  social: https://twitter.com/@jablet
+
+- type: current
+  name: Jason Norwood-Young
+  image: /images/team/team_jason.jpg
+  pos: Data Journalism Advocate
+  social: https://twitter.com/@j_norwood_young
+
+- type: current
+  name: Greg Kempe
+  image: /images/team/team_greg.jpg
+  pos: Lead Technologist
+  social: https://twitter.com/@longhotsummer
+
+
+- type: current
+  name: Raymond Joseph
+  image: /images/team/team_raymond.jpg
+  pos: Head of Media Program
+  social: https://twitter.com/@rayjoe
+
+- type: current
+  name: Jennifer Walker
+  image: /images/team/team_jennifer.jpg
+  pos: Wrangler of things
+  social: https://twitter.com/@nefiger
+
+- type: alumni
+  name: Damian Schlechter
+  image: /images/team/team_damian.jpg
+  pos: Writer of code
+  social: none
+
+- type: current
+  name: Daniela Q. Lépiz
+  image: /images/team/team_daniela.jpg
+  pos: Data Journalist
+  social: https://twitter.com/@dqlepiz
+
+- type: current
+  name: Julia Renouprez
+  image: /images/team/team_julia.jpg
+  pos: Data Wrangler
+  social: https://twitter.com/@SI_Stellies
+
+- type: current
+  name: JD Bothma
+  image: /images/team/team_jd.jpg
+  pos: Writer of code
+  social: https://twitter.com/@jdbothma
+
+- type: current
+  name: Sarah Evans
+  image: /images/team/team_sarah.jpg
+  pos: News Editor
+  social: https://twitter.com/@sarahpeace6
+
+- type: current
+  name: Nadia Thorn
+  image: /images/team/team_nadia.jpg
+  pos: Project Manager
+  social: https://twitter.com/@firenamfly
+
+- type: current
+  name: Lenina Rassool
+  image: /images/team/team_lenina.jpg
+  pos: Communications
+  social: https://twitter.com/@Nina_210
+
+- type: current
+  name: Guus Hoekman
+  image: /images/team/team_guus.jpg
+  pos: Wrangling Fellow
+  social: none
+
+- type: alumni
+  name: Jeanette Strydom
+  image: /images/team/team_jeanette.jpg
+  pos: Community Manager
+  social: https://twitter.com/@jenstrydom
+
+- type: current
+  name: Mats Blakstad
+  image: /images/team/team_mats.jpg
+  pos: Junior Contractor 
+  social: none
+
+- type: alumni
+  name: Osman Siddiqi
+  image: /images/team/team_osman.jpg
+  pos: Visiting Fellow
+  social: none
+
+- type: alumni
+  name: Khutjo Konyana
+  image: /images/team/team_khutjo.jpg
+  pos: Data Herder
+  social: https://twitter.com/@SwiftieDarlinG
+
+- type: alumni
+  name: Petrus J.v.Rensburg
+  image: /images/team/team_petrus.jpg
+  pos: Developer
+  social: https://twitter.com/@petrusjvr
+
+- type: alumni
+  name: Siyabonga Afrika
+  image: /images/team/team_siyabonga.jpg
+  pos: SABC Specialist Data Journalism Consultant
+  social: https://twitter.com/@siyafrica
+
+- type: consultant
+  name: Katherine Eyal
+  image: /images/team/team_katherine.jpg
+  pos: Econometrician
+  social: https://twitter.com/@katrinayellow
+
+- type: consultant
+  name: Hassel Fallas
+  image: /images/team/team_hassel.jpg
+  pos: Data Editor at La Nación
+  social: https://twitter.com/@hasselfallas
+
+- type: alumni
+  name: Hannah Williams
+  image: /images/team/team_hannah.jpg
+  pos: Data Journalism Trainer
+  social: https://twitter.com/@LittleMsNimbus
+---

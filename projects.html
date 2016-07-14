@@ -1,0 +1,61 @@
+---
+layout: default
+title: Tools
+---
+<section class="page-title">
+	<div class="container">
+		<header>
+			<h2><!-- Page Title -->
+				<strong>Tools</strong>
+			</h2><!-- /Page Title -->
+		</header>
+	</div>			
+</section>
+
+<!--Main Section -->
+<section>
+	<div class="container">
+		<div id="portfolio">
+			<p class="lead">At Code for South Africa, we help contexualise data for government, civil society and citizens. We do this by building online tools that help to tell the stories behind the data and make it easy to understand, navigate and apply to make informed decisions.
+			</p>
+
+			<p class="lead">Click on the cards below to explore our online tools created in collaboration with various civil society organisations around the country.</p>
+
+			<ul class="nav nav-pills isotope-filter isotope-filter" data-sort-id="isotope-list" data-option-key="filter">
+				<li data-option-value="*" class="active"><a href="#">Show All</a></li>
+				<li data-option-value=".map"><a href="#">Maps</a></li>
+				<li data-option-value=".gov"><a href="#">Government</a></li>
+				<li data-option-value=".law"><a href="#">Laws</a></li>
+				<li data-option-value=".other"><a href="#">Other Tools</a></li>
+			</ul>
+
+			<div class="row">
+
+				<ul class="sort-destination isotope" data-sort-id="isotope-list">
+
+					{% for project in site.projects %}
+					<li class="col-sm-6 col-md-4 {{ project.category }}"><!-- item -->
+						<div class="item-box">
+							<figure>
+								<a class="item-hover" href="{{ project.url }}">
+									<span class="overlay color2"></span>
+									<span class="inner">
+										<span class="block fa fa-plus fsize20"></span>
+										<strong>PROJECT</strong> DETAILS
+									</span>
+								</a>
+								<img class="img-responsive" src="{{ project.image }}" width="260" height="260" alt="">
+							</figure>
+
+							<div class="item-box-desc">
+								<h4>{{ project.title }}</h4>
+							</div>
+						</div>
+					</li>
+					{% endfor %}
+
+				</ul>
+			</div><!-- /.masonry-container -->
+		</div><!-- portfolio container -->
+	</div>
+</section>

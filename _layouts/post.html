@@ -1,0 +1,141 @@
+---
+layout: default
+---
+<!-- PAGE TOP -->
+<section class="page-title">
+	<div class="container">
+
+		<header>
+
+			<ul class="breadcrumb"><!-- breadcrumb -->
+				<li><a href="/blog/index.html">Blog</a></li>
+				<li class="active"></li>
+			</ul><!-- /breadcrumb -->
+
+			<h2><!-- Page Title -->
+				{{page.title}}
+			</h2><!-- /Page Title -->
+
+		</header>
+
+	</div>			
+</section>
+<!-- /PAGE TOP -->
+
+<!-- CONTENT -->
+<section>
+	<div class="container">
+		<div id="blog" class="row">
+
+			<!-- BLOG ARTICLE -->
+			<div class="col-md-9 col-sm-9">
+
+				<div class="prev-article row">
+
+					<div class="blog-prev-date col-md-3 col-sm-3">
+						<span class="date">
+							{{page.date | date: "%d"}} <small>{{page.date | date: "%B %Y"}}</small>
+						</span>
+						{% for author in site.data.our-team %}
+						{% if author.name == page.author %}
+						<span class="info hidden-xs">
+							<span class="block"><img src="{{author.image}}" width="100%" alt="{{page.author}}"></span>
+						</span>
+						{% else %}
+
+						{% endif %}
+						{% endfor %}
+						<span class="info hidden-xs">
+							<span class="block"><i class="fa fa-user"></i> BY {{page.author}}</span>
+						</span>
+					</div>
+
+					<div class="col-md-9 col-sm-9">
+
+						<h1>{{page.title}}</h1>
+						<!-- article content -->
+						<article>
+							{{content}}
+						</article>
+
+						<!-- SOCIAL -->
+						<p class="socials">
+							<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" class="rounded-icon social fa fa-facebook"></a>
+
+							<a href="https://twitter.com/share?text={{ page.title }}&url={{ page.shorturl }}&via={{page.author}}" class="rounded-icon social fa fa-twitter" target="_blank"><!-- twitter --></a>
+
+							<a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{page.url}}&title={{ page.title }}&source={{ site.title }}" class="rounded-icon social fa fa-linkedin" target="_blank"><!-- linkedin --></a>
+						</p>
+
+						<footer class="comments">
+							{% include disqus.html %}
+						</footer>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!-- /BLOG ARTICLE -->
+
+			<!-- BLOG SIDEBAR -->
+			<div class="col-md-3 col-sm-3">
+
+				<!-- blog search -->
+				<div class="widget">
+					<form  method="get" action="/search.html" class="input-group">
+						<input type="text" class="form-control" id="search_box" name="query" placeholder="Blog Search" />
+						<span class="input-group-btn">
+							<button class="btn btn-primary" type="submit" value="search"><i class="fa fa-search"></i></button>
+						</span>
+					</form>
+				</div>
+
+				<!-- RECENT,POPULAR -->
+				<div class="widget">
+
+					<!-- TABS -->
+					<div class="tabs nomargin-top">
+
+						<!-- tabs -->
+						<ul class="nav nav-tabs nav-justified">
+							<li class="active">
+								<a href="#tab1" data-toggle="tab">
+									Recent
+								</a>
+							</li>
+							<!--<li>
+								<a href="#tab2" data-toggle="tab">
+									Recent
+								</a>
+							</li>-->
+						</ul>
+
+						<!-- tabs content -->
+						<div class="tab-content">
+							<div id="tab1" class="tab-pane active">
+								<ul>
+									{% assign items = site.posts | sort: date | reverse %}
+									{% for post in items limit: 11 %}
+									{% if post.title == page.title %}
+									{% else %}
+									<li><a href="{{post.url}}"> <i class="fa fa-sign-out"></i>{{post.title}}</a> <small>{{post.date | date_to_long_string }}</small></li>
+									{% endif %}
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<!-- /TABS -->
+
+				</div>
+				<!-- /RECENT,POPULAR -->
+
+			</div>
+			<!-- /BLOG SIDEBAR -->
+
+		</div>
+	</div>
+</section>
+<!-- /CONTENT -->
