@@ -8,8 +8,8 @@
 	<meta name="description" content="{% if page.type == "posts" and page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://code4sa.org{{ page.url }}">
-	<meta property="og:title" content="{{ page.title }} | Code for South Africa">
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+	<meta property="og:title" content="{{ page.title }}">
 	{% if page.type == "posts" and page.excerpt %}
 	<meta property="og:description" content="{{ page.excerpt }}">
 	{% else %}
