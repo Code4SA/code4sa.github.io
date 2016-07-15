@@ -4,7 +4,7 @@ title: Opening local budget data
 date: 2016-05-20
 excerpt: |
     The South African National Treasury is in the process of opening municipal financial data to make it widely available in order to increase visibility and strengthen civic participation. How awesome is that?
-image: http://code4sa.org/img/blog/muni-header.jpg
+image: /images/blog/muni-header.jpg
 author: Jeanette Strydom
 ---
 

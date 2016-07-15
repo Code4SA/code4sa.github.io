@@ -3,7 +3,7 @@ layout: post
 title: Mapping sanitation
 date: 2016-06-22
 excerpt: Informal settlements have been a part of Cape Town's makeup since Apartheid ended, yet many still don't have access to basic sanitation services such as water and toilets. We collaborated with various CSOs to build an interactive online map visualising sanitation in informal settlements and show what this really looks like for the residents who live there.
-image: http://code4sa.org/img/blog/matrix-blog.jpg
+image: /images/blog/matrix-blog.jpg
 author: Julia Renouprez
 ---
 
