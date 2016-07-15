@@ -5,7 +5,7 @@ date: 2015-10-30
 author: Greg Kempe
 excerpt: |
      It's firework season and you need to know what your local legislation says about setting them off.
-image: /images/blog/fireworks.jpg
+image: http://code4sa.org/images/blog/fireworks.jpg
 ---
 
 <img src="/images/blog/fireworks.jpg">

@@ -3,7 +3,7 @@ layout: post
 title: Jason Norwood-Young talks about open data on ZADevChat
 date: 2016-01-27
 excerpt: |
-   Hear Jason Norwood-Young talk about school pregnancies, unfair access to APIs and BeautfulSoup 
+   Hear Jason Norwood-Young talk about school pregnancies, unfair access to APIs and BeautifulSoup 
 author: Adi Eyal
 image: none
 ---

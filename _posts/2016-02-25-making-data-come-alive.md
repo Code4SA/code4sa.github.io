@@ -4,7 +4,7 @@ title: Mobile journalism in a data journalism newsroom - making data come alive
 date: 2016-02-25
 excerpt: |
   This week the Code for South Africa Data Journalism Academy did mobile journalism, or “mojo” training: 21st century skills in a traditional journalism environment.
-image: /images/blog/Mojo.jpg
+image: http://code4sa.org/images/blog/Mojo.jpg
 author: Sarah Evans
 ---
 

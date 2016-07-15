@@ -5,7 +5,7 @@ date: 2015-09-10
 author: Greg Kempe
 excerpt: |
     Announcing a new tool to get in touch with your ward councillor.
-image: /images/ward-cllr-form.png
+image: http://code4sa.org/images/ward-cllr-form.png
 ---
 
 <p>

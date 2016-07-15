@@ -4,7 +4,7 @@ title: Taxclock Budget Tools
 date: 2016-04-13
 excerpt: |
   Ordinary people often struggle to get their heads around their country’s budget and many pay tax grudgingly as it seems like their hard-earned money just disappears into a fiscal black hole. Yet budgets and tax have a direct effect on ordinary people.
-image: /images/blog/vote4thebudget.jpg
+image: http://code4sa.org/images/blog/vote4thebudget.jpg
 author: Raymond Joseph
 ---
 

@@ -3,13 +3,13 @@ layout: post
 title: Opening up 17 years of Parliamentary monitoring
 date: 2015-03-31
 author: Greg Kempe
-image: /images/blog/national-assembly.jpg
+image: http://code4sa.org/images/blog/national-assembly.jpg
 excerpt: |
   Together with PMG.org.za we've made 17 years worth of Parliamentary monitoring information
   open and available through an API under a CC-BY 3.0 ZA license.
 ---
 
-<img src="/img/national-assembly.jpg">
+<img src="/images/blog/national-assembly.jpg">
 
 The [Parliamentary Monitoring Group (PMG)](https://pmg.org.za) have been providing South Africans with insight into the day-to-day details of Parliament since 1995. Being the data geeks that we are, we're incredibly excited that you can now access **over 17 years of Parliamentary data through PMG's API at [api.pmg.org.za](https://api.pmg.org.za)**.
 

@@ -4,7 +4,7 @@ title: New data journalism academy in South Africa embodies 'living laboratory' 
 date: 2016-02-12
 excerpt: |
    What does it take to convince thinly stretched, understaffed newsrooms to release experienced reporters for three months to attend a data journalism program — and pay for the privilege, too?
-image: /images/blog/academy.JPG
+image: http://code4sa.org/images/blog/academy.JPG
 author: Raymond Joseph
 ---
 

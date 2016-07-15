@@ -3,7 +3,7 @@ layout: post
 title: 2016 Election Boundaries Available in MapIt
 date: 2016-07-11
 excerpt: The 2016 demarcation boundaries are now available from mapit.code4sa.org.
-image: /images/blog/mapit.jpg
+image: http://code4sa.org/images/blog/mapit.jpg
 author: Greg Kempe
 ---
 
