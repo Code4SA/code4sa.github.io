@@ -55,7 +55,7 @@ featured: true
 		<h2><strong>Related</strong> Projects</h2>
 		<div class="row">
 			{% for project in site.projects %}
-			{% if project.category == page.category and project.title != page.title %}
+			{% if project.category contains page.category and project.title != page.title %}
 			<div class="col-md-3"><!-- item 1 -->
 				<div class="item-box">
 					<figure>
@@ -70,7 +70,6 @@ featured: true
 					</figure>
 					<div class="item-box-desc">
 						<h4>{{project.title}}</h4>
-						<small class="styleColor">{{project.extra}}</small>
 					</div>
 				</div>
 			</div>
@@ -78,7 +77,6 @@ featured: true
 			{% endfor %}
 		</div>
 		<!-- /RELATED -->
-
 	</div>
 </section>
 	<!-- /CONTENT -->

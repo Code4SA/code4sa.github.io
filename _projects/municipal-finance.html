@@ -125,11 +125,11 @@ link: /projects/municipal-finance.html
 		<h2><strong>Related</strong> Projects</h2>
 		<div class="row">
 			{% for project in site.projects %}
-			{% if project.category == page.category and project.title != page.title %}
+			{% if project.category contains page.category and project.title != page.title %}
 			<div class="col-md-3"><!-- item 1 -->
 				<div class="item-box">
 					<figure>
-						<a class="item-hover" href="project.link">
+						<a class="item-hover" href="{{project.link}}">
 							<span class="overlay color2"></span>
 							<span class="inner">
 								<span class="block fa fa-plus fsize20"></span>
@@ -140,7 +140,6 @@ link: /projects/municipal-finance.html
 					</figure>
 					<div class="item-box-desc">
 						<h4>{{project.title}}</h4>
-						<small class="styleColor">{{project.extra}}</small>
 					</div>
 				</div>
 			</div>
