@@ -57,19 +57,19 @@ The 2011 Census shapefiles are very useful. In particular, StatsSA defines two h
 
 Firstly I loaded up my mainplaces shape file. By default, all mainplaces are selected:
 
-<img src="/img/2015-07-18-data-munging/mp_all.png"/>
+<img src="/images/blog/mp_all.png"/>
 
 Then open up the attribute table and filter only this mainplaces that can be found in district DC26 (Zululand). 
 
-<img src="/img/2015-07-18-data-munging/mp_filter.png"/>
+<img src="/images/blog/mp_filter.png"/>
 
 Now only the Zululand shapes are selected:
 
-<img src="/img/2015-07-18-data-munging/mp_selected.png"/>
+<img src="/images/blog/mp_selected.png"/>
 
 If we now save this layer as a csv we will get a file containing mainplaces as one of the columns.
 
-<img src="/img/2015-07-18-data-munging/mp_save.png"/>
+<img src="/images/blog/mp_save.png"/>
 
 Copy that column and put it into a zululand_places.txt file. Do that same thing with the subplaces shapefile. After you clean this text file a little (remove SP and NU suffixes, and some other junk), you will get a file that looks something like [this](https://github.com/Code4SA/ecd-crowdsourcing/blob/master/zululand_places.txt).
 
