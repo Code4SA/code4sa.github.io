@@ -140,4 +140,10 @@
   image: /images/team/team_hannah.jpg
   pos: Data Journalism Trainer
   social: https://twitter.com/@LittleMsNimbus
+
+- type: current
+  name: Lailah Ryklief
+  image: /images/team/team_lailah.jpg
+  pos: Newsroom Developer
+  social: none
 ---
