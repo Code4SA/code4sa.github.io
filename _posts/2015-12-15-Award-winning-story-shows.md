@@ -4,7 +4,7 @@ title: Award-winning story shows impact, potential of data journalism tools
 date: 2015-12-15
 excerpt: |
    Sometimes the best story ideas come from a random discussion that sparks a light bulb moment.
-image: http:/images/blog/domworkersscreenshot.jpg
+image: /images/blog/domworkersscreenshot.jpg
 author: Raymond Joseph
 ---
 

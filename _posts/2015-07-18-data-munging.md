@@ -5,7 +5,7 @@ date: 2015-07-18
 author: Adi Eyal
 excerpt: |
     We haven't written any technical blogs about how we play with data. In this quick post I explain how I managed to create a database of addresses of all the early childhood development centres in Zululand. 
-image: http://code4sa.org/img/2015-07-18-data-munging/mp_selected.png
+image: /images/2015-07-18-data-munging/mp_selected.png
 ---
 
 We haven't written any technical blogs about how we play with data. In this quick post I explain how I managed to create a database of addresses of all the early childhood development centres in Zululand. 

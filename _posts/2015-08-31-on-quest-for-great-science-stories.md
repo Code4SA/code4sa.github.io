@@ -5,7 +5,7 @@ date: 2015-08-31
 author: SciBraai
 excerpt: |
     Data questing for great science stories
-image: http://code4sa.org/img/SciBraai/SciBraai1.jpeg
+image: /images/SciBraai/SciBraai1.jpeg
 ---
 
 [@SciBraai](https://twitter.com/SciBraai)
