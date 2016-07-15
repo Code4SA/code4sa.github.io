@@ -3,7 +3,7 @@ layout: post
 title: Creating an interactive story with CartoDB and Leaflet.js
 date: 2016-06-22
 excerpt: A technical run-through of how we created an interactive storyboard on informal settlements, with detailed explanations on how we used CartoDB and Leaflet.js.
-image: /images/blog/matrix-dev.jpg
+image: http://code4sa.org/images/blog/matrix-dev.jpg
 author: Guus Hoekman
 ---
 

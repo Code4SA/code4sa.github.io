@@ -5,7 +5,7 @@ date: 2015-10-20
 author: Daniela Q. Lépiz
 excerpt: |
      How did a seemingly simple question about mapping African migration lead me to some dark places and how I navigated my way out of there.
-image: /images/blog/MIGRATION_11.jpg
+image: http://code4sa.org/images/blog/MIGRATION_11.jpg
 ---
 
 Imagine if you could trace 50 years of African migration to the four corners of the world? How many women and men left their homes heading for pastures anew in each decade? Where did they go? What did they study? These and  a multitude of other questions come to mind when we start looking back... Since we are talking about going back to the 1960s, a decade of mass decolonisation on the African continent, we are witnessing the rise of resistance movements across the continent. In South Africa, the draconic apartheid legislation that governed the lives of people of colour, saw many choose exile over oppression. 

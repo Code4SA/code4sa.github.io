@@ -4,7 +4,7 @@ title: Who runs the world? Girls!
 date: 2016-03-15
 excerpt: |
   Feb and March saw a 3 week Data Module crash course (#DataCodeStorm) hosted by Code4SA and Codebridge, this time however the room wasn’t filled with the usual tech and data suspects, but rather 12 girls under the age of 18 from Code for Cape Town.
-image: /images/blog/code4ct1.jpg
+image: http://code4sa.org/images/blog/code4ct1.jpg
 author: Jeanette Strydom
 ---
 

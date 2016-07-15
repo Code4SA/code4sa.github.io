@@ -3,7 +3,7 @@ layout: post
 title: March Roundup
 date: 2016-04-08
 excerpt: One quarter of the year gone - here's is our March roundup.
-image: /images/blog/codebridge-contrast.png
+image: http://code4sa.org/images/blog/codebridge-contrast.png
 author: Adi Eyal
 ---
 

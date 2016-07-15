@@ -4,7 +4,7 @@ title: National Data Liberation
 date: 2015-11-03
 excerpt: |
    What happens when 3 cities and a couple of hundred citizens get together to liberate their country's data.
-image: /images/blog/ogp-hackathon_fb-banner_v1.1.png
+image: http://code4sa.org/images/blog/ogp-hackathon_fb-banner_v1.1.png
 author: Jennifer Walker
 ---
 

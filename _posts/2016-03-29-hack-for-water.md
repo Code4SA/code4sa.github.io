@@ -4,7 +4,7 @@ title: Hack for Water
 date: 2016-03-29
 excerpt: |
   South Africa is in the grip of the worst drought in a century, according to The South African Weather Service. You already know all of this, but what can you do to help? We need YOU to get involved by coming up with innovative tech and ideas that can help solve this complex problem. Here’s how...
-image: /images/blog/hack4water1.jpg
+image: http://code4sa.org/images/blog/hack4water1.jpg
 author: Jeanette Strydom
 ---
 
