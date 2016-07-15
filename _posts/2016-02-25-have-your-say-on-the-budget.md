@@ -4,7 +4,7 @@ title: Have your say on the budget
 date: 2016-02-25
 excerpt: |
   Introducing an online tool that allows ordinary South Africans to have their say on the budget
-image: /images/blog/budget-banner_v2.2.png
+image: http://code4sa.org/images/blog/budget-banner_v2.2.png
 author: Lenina Rassool
 ---
 
