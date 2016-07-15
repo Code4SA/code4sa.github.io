@@ -5,15 +5,15 @@
 	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 
 	<title>{% if page.title %}{{ page.title | escape }} - {{ site.title }}{% else %}{{ site.title | escape }}{% endif %}</title>
-	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="description" content="{% if page.type == "posts" and page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://code4sa.org{{ page.url }}">
 	<meta property="og:title" content="{{ page.title }} | Code for South Africa">
-	{% if page.excerpt %}
+	{% if page.type == "posts" and page.excerpt %}
 	<meta property="og:description" content="{{ page.excerpt }}">
 	{% else %}
-	<meta property="og:description" content="Code for South Africa is a civic technology lab that uses data and technology to drive social change">
+	<meta property="og:description" content="{{ site.description }}">
 	{% endif %}
 	<meta property="og:image" content="{{ page.image }}">
 	<meta property="og:site_name" content="Code for South Africa">
