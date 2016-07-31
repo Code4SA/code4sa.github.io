@@ -70,8 +70,8 @@ I'm not going to say anymore on this topic since I don't have any personal insig
 
 I'm hoping to beat this dataset with a stick over the next few months to see what else comes out. If there is anything, I'll let you know.
 
-<script src="{{ site.url }}/assets/js/d3.v3.min.js"></script>
-<script src="{{ site.url }}/assets/js/c3.min.js"></script>
+<script src="/js/d3.v3.min.js"></script>
+<script src="/js/c3.min.js"></script>
 <script>
 var defchart = function(url, bindto) {
     return {
