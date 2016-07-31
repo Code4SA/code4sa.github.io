@@ -7,9 +7,9 @@ excerpt: |
  
 date: 2015-02-13
 extra_js:
-    - /assets/js/d3.v3.min.js
-    - /assets/js/c3.min.js
-    - /assets/js/pym.min.js
+    - /js/d3.v3.min.js
+    - /js/c3.min.js
+    - /js/pym.js
 extra_stylesheets: /css/c3.css
 extra_style: |
     #chart {
