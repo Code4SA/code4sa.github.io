@@ -1,61 +1,61 @@
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 
-	<title>{% if page.title %}{{ page.title | escape }} - {{ site.title }}{% else %}{{ site.title | escape }}{% endif %}</title>
-	<meta name="description" content="{% if page.type == "posts" and page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title %}{{ page.title | escape }} - {{ site.title }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.type == "posts" and page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
-	<meta property="og:title" content="{{ page.title }}">
-	{% if page.type == "posts" and page.excerpt %}
-	<meta property="og:description" content="{{ page.excerpt }}">
-	{% else %}
-	<meta property="og:description" content="{{ site.description }}">
-	{% endif %}
-	<meta property="og:image" content="{{ page.image }}">
-	<meta property="og:site_name" content="Code for South Africa">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ page.title }}">
+  {% if page.type == "posts" and page.excerpt %}
+  <meta property="og:description" content="{{ page.excerpt }}">
+  {% else %}
+  <meta property="og:description" content="{{ site.description }}">
+  {% endif %}
+  <meta property="og:image" content="{{ page.image }}">
+  <meta property="og:site_name" content="Code for South Africa">
 
-	
-	<!--<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">-->
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  
+  <!--<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">-->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-	<!-- WEB FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css" />
+  <!-- WEB FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css" />
 
-	<!-- CORE CSS -->
-	<link href="/template/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="/template/css/font-awesome.css" rel="stylesheet" type="text/css" />
-	<link href="/template/css/sky-forms.css" rel="stylesheet" type="text/css" />
-	<link href="/template/css/line-icons.css" rel="stylesheet" type="text/css" />
-	<link href="/template/css/magnific-popup.css" rel="stylesheet" type="text/css" />
-	<link href="/template/css/animate.css" rel="stylesheet" type="text/css" />
-	<link href="/template/css/flexslider.css" rel="stylesheet" type="text/css" />
+  <!-- CORE CSS -->
+  <link href="/template/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="/template/css/font-awesome.css" rel="stylesheet" type="text/css" />
+  <link href="/template/css/sky-forms.css" rel="stylesheet" type="text/css" />
+  <link href="/template/css/line-icons.css" rel="stylesheet" type="text/css" />
+  <link href="/template/css/magnific-popup.css" rel="stylesheet" type="text/css" />
+  <link href="/template/css/animate.css" rel="stylesheet" type="text/css" />
+  <link href="/template/css/flexslider.css" rel="stylesheet" type="text/css" />
 
-	<!-- REVOLUTION SLIDER -->
-	<link href="/template/css/revolution-slider.css" rel="stylesheet" type="text/css" />
-	<link href="/template/css/layerslider.css" rel="stylesheet" type="text/css" />
+  <!-- REVOLUTION SLIDER -->
+  <link href="/template/css/revolution-slider.css" rel="stylesheet" type="text/css" />
+  <link href="/template/css/layerslider.css" rel="stylesheet" type="text/css" />
 
-	<!-- THEME CSS -->
-	<link href="/template/css/essentials.css" rel="stylesheet" type="text/css" />
-	<link href="/template/css/layout.css" rel="stylesheet" type="text/css" />
-	<link href="/template/css/header-2.css" rel="stylesheet" type="text/css" />
-	<link href="/template/css/footer-default.css" rel="stylesheet" type="text/css" />
-	<link href="/template/css/color-scheme/darkblue.css" rel="stylesheet" type="text/css" id="color_scheme" />
-	<link href="/template/css/layout-blog.css" rel="stylesheet" type="text/css" />
+  <!-- THEME CSS -->
+  <link href="/template/css/essentials.css" rel="stylesheet" type="text/css" />
+  <link href="/template/css/layout.css" rel="stylesheet" type="text/css" />
+  <link href="/template/css/header-2.css" rel="stylesheet" type="text/css" />
+  <link href="/template/css/footer-default.css" rel="stylesheet" type="text/css" />
+  <link href="/template/css/color-scheme/darkblue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+  <link href="/template/css/layout-blog.css" rel="stylesheet" type="text/css" />
 
-	<link href="/css/custom.css" rel="stylesheet" type="text/css" />
+  <link href="/css/custom.css" rel="stylesheet" type="text/css" />
 
-	{% for css in page.extra_stylesheets %}
-		<link rel="stylesheet" href="{{ css }}"></script>
-	{% endfor %}
+  {% for css in page.extra_stylesheets %}
+    <link rel="stylesheet" href="{{ css }}"></script>
+  {% endfor %}
 
-	<style>
-	{{ page.extra_style }}
-	</style>
+  <style>
+  {{ page.extra_style }}
+  </style>
 
-	<script type="text/javascript" src="/template/plugins/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="/template/plugins/jquery-2.1.4.min.js"></script>
 </head>

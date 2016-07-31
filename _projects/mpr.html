@@ -8,76 +8,76 @@ link: /projects/mpr.html
 ---
 <!-- PAGE TOP -->
 <section class="page-title">
-	<div class="container">
+  <div class="container">
 
-		<header>
-			<ul class="breadcrumb"><!-- breadcrumb -->
-				<li><a href="/projects.html">Our Projects</a></li>
-				<li class="active">{{page.title}}</li>
-			</ul>
-			<h2><!-- Page Title -->
-				{{page.title}}
-			</h2><!-- /Page Title -->
+    <header>
+      <ul class="breadcrumb"><!-- breadcrumb -->
+        <li><a href="/projects.html">Our Projects</a></li>
+        <li class="active">{{page.title}}</li>
+      </ul>
+      <h2><!-- Page Title -->
+        {{page.title}}
+      </h2><!-- /Page Title -->
 
-		</header>
+    </header>
 
-	</div>			
+  </div>      
 </section>
 <!-- /PAGE TOP -->
 
 <!-- CONTENT -->
 <section>
-	<div class="container">
+  <div class="container">
 
-		<div class="row">
-			<div class="col-sm-6 col-md-7">
-				<div class="owl-carousel controlls-over product-image" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
-					<div>
-						<img alt="" class="img-responsive" src="{{page.image}}">
-					</div>
-				</div>
+    <div class="row">
+      <div class="col-sm-6 col-md-7">
+        <div class="owl-carousel controlls-over product-image" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+          <div>
+            <img alt="" class="img-responsive" src="{{page.image}}">
+          </div>
+        </div>
 
-			</div>
+      </div>
 
-			<div class="col-sm-6 col-md-5">
-				<h3>About</h3>
-				<p>How much should South Africans be paying for their medicines?</p>
-				<a href="https://mpr.code4sa.org/" target="_blank" class="btn btn-primary btn-lg btn-margin-top"><i class="fa fa-caret-right" ></i> Go To Project</a>
-			</div>
-		</div>
+      <div class="col-sm-6 col-md-5">
+        <h3>About</h3>
+        <p>How much should South Africans be paying for their medicines?</p>
+        <a href="https://mpr.code4sa.org/" target="_blank" class="btn btn-primary btn-lg btn-margin-top"><i class="fa fa-caret-right" ></i> Go To Project</a>
+      </div>
+    </div>
 
-		<hr />
+    <hr />
 <!-- RELATED -->
-		<h2><strong>Related</strong> Projects</h2>
-		<div class="row">
-			<ul class="sort-destination isotope" data-sort-id="isotope-list">
+    <h2><strong>Related</strong> Projects</h2>
+    <div class="row">
+      <ul class="sort-destination isotope" data-sort-id="isotope-list">
 
-				{% for project in site.projects %}
-				{% if project.category contains page.category and project.title != page.title %}
-				<li class="col-sm-6 col-md-4 {{ project.category }}"><!-- item -->
-					<div class="item-box">
-						<figure>
-							<a class="item-hover" href="{{ project.url }}">
-								<span class="overlay color2"></span>
-								<span class="inner">
-									<span class="block fa fa-plus fsize20"></span>
-									<strong>PROJECT</strong> DETAILS
-								</span>
-							</a>
-							<img class="img-responsive" src="{{ project.image }}" width="260" height="260" alt="">
-						</figure>
+        {% for project in site.projects %}
+        {% if project.category contains page.category and project.title != page.title %}
+        <li class="col-sm-6 col-md-4 {{ project.category }}"><!-- item -->
+          <div class="item-box">
+            <figure>
+              <a class="item-hover" href="{{ project.url }}">
+                <span class="overlay color2"></span>
+                <span class="inner">
+                  <span class="block fa fa-plus fsize20"></span>
+                  <strong>PROJECT</strong> DETAILS
+                </span>
+              </a>
+              <img class="img-responsive" src="{{ project.image }}" width="260" height="260" alt="">
+            </figure>
 
-						<div class="item-box-desc">
-							<h4>{{ project.title }}</h4>
-						</div>
-					</div>
-				</li>
-				{% endif %}
-				{% endfor %}
+            <div class="item-box-desc">
+              <h4>{{ project.title }}</h4>
+            </div>
+          </div>
+        </li>
+        {% endif %}
+        {% endfor %}
 
-			</ul>
-		</div>
-		<!-- /RELATED -->
-	</div>
+      </ul>
+    </div>
+    <!-- /RELATED -->
+  </div>
 </section>
-	<!-- /CONTENT -->
+  <!-- /CONTENT -->
