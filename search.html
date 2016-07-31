@@ -4,22 +4,22 @@ title: Search Results
 ---
 <!-- PAGE TOP -->
 <section class="page-title">
-	<div class="container">
+  <div class="container">
 
-		<header>
+    <header>
 
-			<ul class="breadcrumb"><!-- breadcrumb -->
-				<li><a href="/blog/index.html">Blog</a></li>
-				<li class="active">Search</li>
-			</ul><!-- /breadcrumb -->
+      <ul class="breadcrumb"><!-- breadcrumb -->
+        <li><a href="/blog/index.html">Blog</a></li>
+        <li class="active">Search</li>
+      </ul><!-- /breadcrumb -->
 
-			<h2><!-- Page Title -->
-				<strong>Blog </strong>Search Results
-			</h2><!-- /Page Title -->
+      <h2><!-- Page Title -->
+        <strong>Blog </strong>Search Results
+      </h2><!-- /Page Title -->
 
-		</header>
+    </header>
 
-	</div>			
+  </div>      
 </section>
 <!-- /PAGE TOP -->
 
@@ -27,47 +27,47 @@ title: Search Results
 
 <!-- CONTENT -->
 <section>
-	<div class="container">
+  <div class="container">
 
-		<!-- SEARCH -->
-		<form method="get" action="/search.html" class="clearfix well well-sm search-big">
-			<div class="input-group">
+    <!-- SEARCH -->
+    <form method="get" action="/search.html" class="clearfix well well-sm search-big">
+      <div class="input-group">
 
-				<div class="input-group-btn">
-					<label for="search-box">Search</label>
-				</div>
+        <div class="input-group-btn">
+          <label for="search-box">Search</label>
+        </div>
 
-				<input id="search-box" class="form-control input-lg" type="text" name="query" placeholder="Search...">
-				<div class="input-group-btn">
-					<button type="submit" class="btn btn-default input-lg" value="search"><i class="fa fa-fw fa-search fa-lg"></i></button>
-				</div>
-			</div>
+        <input id="search-box" class="form-control input-lg" type="text" name="query" placeholder="Search...">
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-default input-lg" value="search"><i class="fa fa-fw fa-search fa-lg"></i></button>
+        </div>
+      </div>
 
-		</form>
-		<!-- /SEARCH -->
-		<ul id="search-results"></ul>
+    </form>
+    <!-- /SEARCH -->
+    <ul id="search-results"></ul>
 
-		<script>
-			window.store = {
-				{% for post in site.posts %}
-				"{{ post.url | slugify }}": {
-					"title": "{{ post.title | xml_escape }}",
-					"author": "{{ post.author | xml_escape }}",
-					"content": {{ post.content | strip_html | strip_newlines | jsonify }},
-					"url": "{{ post.url | xml_escape }}"
-				}
-				{% unless forloop.last %},{% endunless %}
-				{% endfor %}
-			};
-		</script>
-		<script src="/js/lunr.min.js"></script>
-		<script src="/js/search.js"></script>
+    <script>
+      window.store = {
+        {% for post in site.posts %}
+        "{{ post.url | slugify }}": {
+          "title": "{{ post.title | xml_escape }}",
+          "author": "{{ post.author | xml_escape }}",
+          "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+          "url": "{{ post.url | xml_escape }}"
+        }
+        {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      };
+    </script>
+    <script src="/js/lunr.min.js"></script>
+    <script src="/js/search.js"></script>
 
 
-		<div class="row">
+    <div class="row">
 
-		</div>
+    </div>
 
-	</div>
+  </div>
 </section>
 <!-- /CONTENT -->
