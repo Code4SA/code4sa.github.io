@@ -15,7 +15,7 @@
   {% else %}
   <meta property="og:description" content="{{ site.description }}">
   {% endif %}
-  <meta property="og:image" content="{{ page.image }}">
+  <meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}http://code4sa.org/images/logo.png{% endif %}">
   <meta property="og:site_name" content="Code for South Africa">
 
   
