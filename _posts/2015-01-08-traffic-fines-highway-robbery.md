@@ -27,7 +27,7 @@ Traffic accidents in South Africa are a serious cause for concern in South Afric
 
 I started with the hypothesis that municipalities on major highways (N1, N2, N3, etc) earn more from fines than other municipalities. The best way to answer that question is to look at the financial reports for each municipality. Thankfully, these reports are standardised by the National Treasury making it easier to find the relevant figures. Below is an excerpt from the report for the nation as a whole.
 
-<img src="/img/traffic-fines/operating-revenue.png"/>
+<img src="/images/blog/operating-revenue.png" style="width:100%"/>
 
 Notice that fines are reported as a revenue stream along with other income sources such as rates, electricity, water and other municipal services. Before continuing, a quick caveat, all of the research in this article refers to this fines line item. It isn't clear what percentage of fines are traffic related. While I am making a big assumption that traffic fines (and speeding fines in particular) comprise a large percentage of this figure, I could be completely wrong . I don't think that assumption is too far off the mark though, and hopefully I can convince you of that in the discussion below. <strong>Update 2015/12/19</strong>: At least for Ubuntu 99.99% of fines refer to traffic fines. It still isnt clear how many of those are for speeding
 
