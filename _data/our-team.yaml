@@ -96,7 +96,7 @@
 - type: current
   name: Mats Blakstad
   image: /images/team/team_mats.jpg
-  pos: Junior Contractor 
+  pos: Junior Contractor
   social: none
 
 - type: alumni
@@ -146,4 +146,10 @@
   image: /images/team/team_lailah.jpg
   pos: Newsroom Developer
   social: none
+
+- type: current
+  name: Lion Summerbell
+  image: /images/team/team_lion.jpg
+  pos: Developer
+  social: https://twitter.com/@lionsummerbell
 ---
