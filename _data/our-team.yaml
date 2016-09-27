@@ -100,6 +100,12 @@
   social: https://twitter.com/@lionsummerbell
 
 - type: current
+  name: Roxanne Joseph
+  image: /images/team/team_roxanne.jpg
+  pos: Campaign Manager
+  social: https://twitter.com/rox_jos
+
+- type: current
   name: Jameelah Parker
   image: /images/team/team_jameelah.jpg
   pos: Financial Manager
@@ -138,7 +144,7 @@
 - type: alumni
   name: Siyabonga Afrika
   image: /images/team/team_siyabonga.jpg
-  pos: SABC Specialist Data Journalism Consultant
+  pos: Data Journalism Consultant
   social: https://twitter.com/@siyafrica
 
 - type: consultant
