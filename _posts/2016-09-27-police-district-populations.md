@@ -40,10 +40,10 @@ rate for each District. We can then map those back to Small Areas using the
 same technique as above, giving us an estimate of crimes per Small Area that
 takes into account the population of each Small Area.
 
-We can use the technique again to map crime estimates to other areas such as
-wards, municipalities and provinces. This is really useful because it lets us
-compare crimes alongside all the Census data that we already have at ward and
-municipality level.
+We can use the technique again to map Small Area crime estimates to other areas
+such as wards, municipalities and provinces. This is really useful because it
+lets us compare crimes alongside all the Census data that we already have at
+ward and municipality level.
 
 In fact, that's exactly what we've done for the youth-related crime indicators
 on [YouthExplorer.org.za](http://youthexplorer.org.za).
