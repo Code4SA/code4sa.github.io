@@ -1,11 +1,10 @@
 ---
 layout: post
 author: Mats Blakstad
-date: 2016-09-22
+date: 2016-09-26
 title: 114 media professionals had their say about data-driven journalism
-excerpt: How can news publications start use more data-driven journalism?
+excerpt: How can news publications start using more data-driven journalism?
 image: http://code4sa.org/images/blog/ddj.png
-published: true
 ---
 
 For the last months I’ve been doing research for Code for South Africa’s Data Journalism Academy, interviewing 20 media professionals about their experiences using data-driven journalism. How can news publications that already struggle to survive justify investing in such an expensive and time-consuming form of journalism? Some were confused by my questions “Why are you asking us? We’re trying to find this out ourselves”, others said data-driven journalism opened opportunities for those new and much-needed revenue streams.
