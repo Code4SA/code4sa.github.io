@@ -3,7 +3,7 @@ layout: post
 author: Roxanne Joseph
 title: "Read all about it, use Open Gazettes"
 excerpt: |
-    Journalists will be able to change the way they use government gazettes to do stories using Open Gazettes, which allows users to search and track important public information. 
+    Open Gazettes changes the way journalists use government gazettes to do stories, by allowing users to search and track important public information. 
 image: /images/blog/gazette-journalists.jpg
 ---
 
