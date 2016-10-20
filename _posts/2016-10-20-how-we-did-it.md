@@ -80,7 +80,7 @@ While Google and DocumentCloud do a reasonable job of making these types of docu
 
 In addition to searching for something - for example, “driving permit paarl” - you can set an alert so that you’re notified by email within a few days of when a gazette matching the search is published. This means that you don’t need to check each week for new information, such as newly issued permits in your area.
 
-<img src="/images/blog/how-gazette-2.png">
+<img src="/images/blog/how-gazette-2.png" style="width: 100%">
 
 Aleph uses the text embedded in the gazette PDF files to support text search. While PDFs look like text documents, they’re mostly focused on looking good and do not necessarily contain text in a form that is usable by a computer. To make a scanned PDF searchable, the text found using OCR (Optical Character Recognition) is overlaid on the image in the PDF.
 
@@ -97,7 +97,7 @@ The fact that machine-readable text isn’t the primary focus of PDFs does make 
 
 “The gazettes are published by GPW in the PDF format to preserve and ensure accuracy of the publication as legal government communication,” she explains. “Releasing these publications in open files format would open them to abuse where the original information may be changed to suit the requirements of the perpetrator.”
 
-But the argument that they shouldn’t be published in a better format isn’t a good one because we can - and are already - extracting it for good; for the sake of accountability.
+But we feel the argument that they shouldn’t be published in a better format for privacy isn’t sufficient because we can - and are already - extracting it for good; for the sake of accountability.
 
 However, there are various pieces of legislation that stipulates this information - such as a [name change](http://www.saflii.org/za/legis/consol_act/badra1992301/) - be made public in the Government Gazette. Of course the misuse of personal information in gazettes is a valid concern, but this has been the case for over a century now and at the end of the day, the information is available via gazettes. Continuing to publish gazettes only in badly-machine-readable forms only hurts accountability.
 
