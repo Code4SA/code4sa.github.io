@@ -7,7 +7,7 @@ excerpt: |
 image: /images/blog/youth-explorer-0.jpg
 ---
 
-Data focusing specifically on young people in the is hard to come by. What are the challenges our youth are experiencing? What are the realities that shape their lives? And how do these differ from one community to another? This lack of information severely limits the ability of programmes and policies to effectively support young people in their specific contexts.
+Data focusing specifically on young people is hard to come by. What are the challenges our youth are experiencing? What are the realities that shape their lives? And how do these differ from one community to another? This lack of information severely limits the ability of programmes and policies to effectively support young people in their specific contexts.
 
 Now, the [Western Cape Youth Explorer](http://youthexplorer.org.za/) gives you access to data on demographics, education, unemployment, health, access to basic services and more, down to ward level, across the Western Cape, all in one easily-accessible place. 
 
