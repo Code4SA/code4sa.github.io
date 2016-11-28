@@ -57,4 +57,6 @@ This is just the start. But we need your help.
 We’d love to hear from you, so please get in touch with us on Twitter, <a href="https://twitter.com/@Code4SA">@Code4SA</a> email <a href="mailto:datadesk@code4sa.org">datadesk@code4sa.org</a>, or join our <a href="http://discuss.codebridge.org.za/t/cipc-data/72/3">discussion forum</a> and talk to us about what data we should be collecting, how we can help you find the data you need, and explore what we’ve already put out there.
 Together, we can lift the lid on the murky world of corporate data.
 
-<small>Image by Jannes Linders (<a href="http://www.consortiumkomfort.nl/">consortiumkomfort.nl)</a></small>
+<hr>
+
+<small>Image by <a href="https://commons.wikimedia.org/wiki/File:Vergaderruimte_Boardroom.jpg">Jannes Linders</a></small>
