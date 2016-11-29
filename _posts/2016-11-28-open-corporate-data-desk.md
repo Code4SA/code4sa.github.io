@@ -22,11 +22,11 @@ There are a couple of disclaimers, of course. Firstly we’d like to make the da
 
 
 So, why are we doing this? Well, a few reasons really.
-As an example, it’s <a href="http://www.rdm.co.za/business/2016/03/09/us1-trillion-flows-out-of-africa">estimated</a> that Africa loses about US$1-trillion through illicit financial outflows every year. It’s also estimated that if Africa could stop the bleed, it would collect enough in taxes that the continent would be able to wean itself off of development aid. This are taxes that should be plowed back into host countries to fight poverty, buy medicines, and improve the lives of ordinary people.
+As an example, it’s <a href="http://www.rdm.co.za/business/2016/03/09/us1-trillion-flows-out-of-africa">estimated</a> that Africa loses about US$1-trillion through illicit financial outflows every year. It’s also estimated that if Africa could stop the bleed, it would collect enough in taxes that the continent would be able to wean itself off of development aid. These are taxes that should be plowed back into host countries to fight poverty, buy medicines, and improve the lives of ordinary people.
 
 
 There are two reasons why companies get away with syphoning their profits offshore and robbing their host countries of taxes they should legally be paying. Firstly, <a href="http://www.uneca.org/sites/default/files/PublicationFiles/iff_main_report_26feb_en.pdf">research currently</a> before the African Union suggests that weak or corrupt governments don’t have the capacity, and often the will, to stand up to the corporate world.
-Secondly we simply don’t know enough about who owns what in the corporate world, or the ins and outs of beneficial ownership, and this allows companies to get away with corruption, theft, and even dodgy dealings with <a href="https://panamapapers.investigativecenters.org/sierra-leone-2/">Sierra Leonian warlords</a>.
+Secondly, we simply don’t know enough about who owns what in the corporate world, or the ins and outs of beneficial ownership, and this allows companies to get away with corruption, theft, and even dodgy dealings with <a href="https://panamapapers.investigativecenters.org/sierra-leone-2/">Sierra Leonian warlords</a>.
 
 
 This is not the only reason, but it’s a big part of why Code for South Africa is going after corporate data.
