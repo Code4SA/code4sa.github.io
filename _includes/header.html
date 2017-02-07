@@ -32,6 +32,9 @@
             <li {% if page.url contains 'projects.html' or page.url contains "/projects/" %} class ="label active" {% else %} class="label" {% endif %}>
               <a href="/projects.html">Tools</a>
             </li>
+            <li {% if page.title contains "Training Course" %} class ="label active" {% else %} class="label" {% endif %}>
+              <a  href="/short-courses.html">Short courses</a>
+            </li>
             <li {% if page.title contains "Blog" or page.layout contains "post" %} class ="label active" {% else %} class="label" {% endif %}>
               <a  href="/blog/index.html">Blog</a>
             </li>
