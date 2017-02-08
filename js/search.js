@@ -13,8 +13,11 @@
     <div class=\"panel-heading\" role=\"tab\" id=\"heading" +  id + "\">\
       <h4 class=\"panel-title\">\
         <a role=\"button\" data-toggle=\"collapse\" data-parent=\"#search-results\" href=\"#collapse" +  id + "\" aria-expanded=\"false\" aria-controls=\"collapse" +  id + "\">\
-          <h4 class=\"name-heading\"></h4>\
-          <span class=\"result-count\">...</span> results\
+          <span class=\"portal-name\"></span>\
+          <span class=\"dataset-name\">...</span>\
+          <div>\
+            <span class=\"result-count\">...</span> results\
+          </div>\
         </a>\
       </h4>\
     </div>\
@@ -22,11 +25,13 @@
       <div class=\"panel-body dataset-results-container\"></div>\
     </div>\
   </div>");
-    var nameHeading = container.find('.name-heading');
+    var portalHeading = container.find('.portal-name');
+    portalHeading.html(baseURL);
+    var nameHeading = container.find('.dataset-name');
     var resultsContainer = container.find('.dataset-results-container');
     var countContainer = container.find('.result-count');
     $.ajax(baseURL + '/api/views/' + apiId + '/rows.json', {
-      success: function(data) { nameHeading.append(data.meta.view.name); },
+      success: function(data) { nameHeading.html(data.meta.view.name); },
       error: function(jqXHR, textStatus, errorThrown) {
         error(jqXHR, textStatus, errorThrown);
         nameHeading.append(moreURL);
