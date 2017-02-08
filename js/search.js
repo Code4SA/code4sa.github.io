@@ -7,13 +7,25 @@
     console.log(textStatus, errorThrown, jqXHR);
   };
 
-  var socrataDataset = function(baseURL, id, moreId) {
-    var container = $('<div class="dataset-container"></div>');
-    var nameHeading = $('<h3></h3>');
-    container.append(nameHeading);
-    var resultsContainer = $('<div class="dataset-results-container"></div>');
-    container.append(resultsContainer);
-    $.ajax(baseURL + '/api/views/' + id + '/rows.json', {
+  var socrataDataset = function(baseURL, apiId, moreId) {
+    var id = Math.random().toString(36).substring(7);
+    var container = $("<div class=\"panel panel-default\">\
+    <div class=\"panel-heading\" role=\"tab\" id=\"heading" +  id + "\">\
+      <h4 class=\"panel-title\">\
+        <a role=\"button\" data-toggle=\"collapse\" data-parent=\"#search-results\" href=\"#collapse" +  id + "\" aria-expanded=\"false\" aria-controls=\"collapse" +  id + "\">\
+          <h4 class=\"name-heading\"></h4>\
+          <span class=\"result-count\">...</span> results\
+        </a>\
+      </h4>\
+    </div>\
+    <div id=\"collapse" +  id + "\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"heading" +  id + "\">\
+      <div class=\"panel-body dataset-results-container\"></div>\
+    </div>\
+  </div>");
+    var nameHeading = container.find('.name-heading');
+    var resultsContainer = container.find('.dataset-results-container');
+    var countContainer = container.find('.result-count');
+    $.ajax(baseURL + '/api/views/' + apiId + '/rows.json', {
       success: function(data) { nameHeading.append(data.meta.view.name); },
       error: function(jqXHR, textStatus, errorThrown) {
         error(jqXHR, textStatus, errorThrown);
@@ -27,10 +39,10 @@
     var htmlURL = baseURL + '/' + moreId;
     var success = function(query) {
       return function(data) {
-        var count = "<div>" + data.length + " results </div>";
+        countContainer.html(data.length);
         var searchMoreURL = htmlURL + '/data?q=' + query;
         var searchMore = "<div><a href=\"" + searchMoreURL + "\">Search more</a></div>";
-        $(count + searchMore).appendTo(resultsContainer);
+        $(searchMore).appendTo(resultsContainer);
         for (i in data.slice(0,3)) {
           var rows = "";
           for (key in data[i]) {
@@ -51,8 +63,9 @@
       container: container,
       resultsContainer: resultsContainer,
       search: search = function(query) {
+        countContainer.html('...');
         startSpinner();
-        $.ajax(baseURL + "/resource/" + id + ".json?$q=" + query, {
+        $.ajax(baseURL + "/resource/" + apiId + ".json?$q=" + query, {
           error: error,
           success: success(query),
           complete: function() { stopSpinner(); }
