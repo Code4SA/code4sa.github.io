@@ -1,62 +1,80 @@
 (function() {
-  function displaySearchResults(results, store) {
-    var searchResults = document.getElementById('search-results');
+  var searchBox = $('#searchbox')[0];
+  var searchButton = $('#searchbutton');
+  var resultsContainer = $('#search-results');
 
-    if (results.length) { // Are there any results?
-      var appendString = '';
+  var error = function(jqXHR, textStatus, errorThrown) {
+    console.log(textStatus, errorThrown, jqXHR);
+  };
 
-      for (var i = 0; i < results.length; i++) {  // Iterate over the results
-        var item = store[results[i].ref];
-        appendString += '<div class="clearfix search-result"><!-- item -->'
-        appendString += '<h4><a href="' + item.url + '">' + item.title + '</a></h4>';
-        appendString += '<small class="text-success">'+item.url.substring(11, (item.url.length)) + '</small>'
-        appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
-        appendString += '</div><!-- /item -->'
+  var socrataDataset = function(baseURL, id, moreId) {
+    var container = $('<div class="dataset-container"></div>');
+    var nameHeading = $('<h3></h3>');
+    container.append(nameHeading);
+    var resultsContainer = $('<div class="dataset-results-container"></div>');
+    container.append(resultsContainer);
+    $.ajax(baseURL + '/api/views/' + id + '/rows.json', {
+      success: function(data) { nameHeading.append(data.meta.view.name); },
+      error: function(jqXHR, textStatus, errorThrown) {
+        error(jqXHR, textStatus, errorThrown);
+        nameHeading.append(moreURL);
       }
-
-      searchResults.innerHTML = appendString;
-    } else {
-      searchResults.innerHTML = '<li>No results found</li>';
-    }
-  }
-
-  function getQueryVariable(variable) {
-    var query = window.location.search.substring(1);
-    var vars = query.split('&');
-
-    for (var i = 0; i < vars.length; i++) {
-      var pair = vars[i].split('=');
-
-      if (pair[0] === variable) {
-        return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
-      }
-    }
-  }
-
-  var searchTerm = getQueryVariable('query');
-
-  if (searchTerm) {
-    document.getElementById('search-box').setAttribute("value", searchTerm);
-
-    // Initalize lunr with the fields it will be searching on. I've given title
-    // a boost of 10 to indicate matches on this field are more important.
-    var idx = lunr(function () {
-      this.field('id');
-      this.field('title', { boost: 10 });
-      this.field('author');
-      this.field('content');
     });
+    var spinner = $('<img src="images/Ajax-loader.gif"></img>');
+    container.append(spinner);
+    var startSpinner = function() { spinner.show(); };
+    var stopSpinner = function() { spinner.hide(); };
+    var htmlURL = baseURL + '/' + moreId;
+    var success = function(query) {
+      return function(data) {
+        var count = "<div>" + data.length + " results </div>";
+        var searchMoreURL = htmlURL + '/data?q=' + query;
+        var searchMore = "<div><a href=\"" + searchMoreURL + "\">Search more</a></div>";
+        $(count + searchMore).appendTo(resultsContainer);
+        for (i in data.slice(0,3)) {
+          var rows = "";
+          for (key in data[i]) {
+            rows += "<tr><td>" + key + "</td><td>" + data[i][key] + "</td></tr>";
+          }
+          $('<div class="result"><table class="table"><tr><th>field</th><th>value</th></tr>' + rows + '</table></div>').appendTo(resultsContainer);
+        };
+        if (data.length > 3) {
+          $('<h3>...</h3>').appendTo(resultsContainer);
+        }
+        resultsContainer.mark(stemmer(query), {
+          separateWordSearch: true
+        });
+      }
+    };
 
-    for (var key in window.store) { // Add the data to lunr
-      idx.add({
-        'id': key,
-        'title': window.store[key].title,
-        'author': window.store[key].author,
-        'content': window.store[key].content
-      });
-
-      var results = idx.search(searchTerm); // Get lunr to perform a search
-      displaySearchResults(results, window.store); // We'll write this in the next section
+    return {
+      container: container,
+      resultsContainer: resultsContainer,
+      search: search = function(query) {
+        startSpinner();
+        $.ajax(baseURL + "/resource/" + id + ".json?$q=" + query, {
+          error: error,
+          success: success(query),
+          complete: function() { stopSpinner(); }
+        })
+      }
     }
   }
+
+  var datasets = [
+    socrataDataset("https://data.code4sa.org", "4izb-5dt5", "Government/City-of-Cape-Town-Tender-Awards-July-Dec-2014/gxpj-akik"),
+    socrataDataset("https://data.code4sa.org", "9vmn-5tnb", "Government/Tender-Awards-2015-2016/kvv2-xrvr")
+  ];
+
+
+  $(searchbutton).on('click', function () {
+    resultsContainer.empty();
+    datasets.forEach(function(dataset) {
+      dataset.resultsContainer.empty();
+      resultsContainer.append(dataset.container);
+      dataset.search(searchBox.value);
+    });
+    return false;
+  });
+
 })();
