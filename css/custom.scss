@@ -40,3 +40,24 @@
 	padding-bottom: 5px;
 	margin-bottom: 10px;
 }
+
+.managed-services {
+	i {
+		vertical-align: middle;
+		color: #444;
+	}
+	h4 {
+		padding-top: 10px;
+	}
+	.col-sm-6 {
+		border: 10px solid #fff;
+		background-color: #f2f2f2;
+	}
+	.email-us {
+		background-color: #fce3a3;
+		color: #8a6d3b;
+		p {
+			font-size: 1.2em;
+		}
+	}
+}
