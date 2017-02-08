@@ -80,7 +80,8 @@
   }
 
   var datasets = [
-    socrataDataset("https://data.code4sa.org", "4izb-5dt5", "Government/City-of-Cape-Town-Tender-Awards-July-Dec-2014/gxpj-akik"),
+    socrataDataset("https://data.code4sa.org", "x6jj-hasw", "Business/SA-CIPC-Company-Names-Registration-Numbers-and-Det/f9mi-hay7"),
+    socrataDataset("https://data.code4sa.org", "qxgb-avr5", "Business/UK-Land-Registry/n7gy-as2q"),
     socrataDataset("https://data.code4sa.org", "9vmn-5tnb", "Government/Tender-Awards-2015-2016/kvv2-xrvr")
   ];
 
