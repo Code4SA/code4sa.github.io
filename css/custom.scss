@@ -9,6 +9,52 @@
   padding: 0px;
 }
 
+.corporate-data-well {
+	padding: 0;
+	background-color: #f7f7f7;
+	p, h5 {
+		padding: 7px 10px;
+		margin: 0;
+	}
+	h5 {
+		background-color: #ededed;
+		font-weight: 400;
+	}
+	.btn {
+		padding: 6px 10px;
+	}
+	.fa {
+		padding-right: 3px;
+	}
+}
+
+.corporate-data-section {
+	padding-top: 40px;
+}
+
+.corporate-data-request {
+	background-color: #f7f7f7;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	padding: 10px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.corporate-data-search {
+	background-color: #f7f7f7;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.portal-name {
+    font-size: 0.8em;
+    color: black;
+}
+
+
 .managed-services {
 	i {
 		vertical-align: middle;
