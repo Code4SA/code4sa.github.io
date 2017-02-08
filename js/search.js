@@ -46,7 +46,7 @@
       return function(data) {
         countContainer.html(data.length);
         var searchMoreURL = htmlURL + '/data?q=' + query;
-        var searchMore = "<div><a href=\"" + searchMoreURL + "\">Search more</a></div>";
+        var searchMore = "<div><a target=\"_blank\" href=\"" + searchMoreURL + "\">Search more</a></div>";
         $(searchMore).appendTo(resultsContainer);
         for (i in data.slice(0,3)) {
           var rows = "";
