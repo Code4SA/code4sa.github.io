@@ -89,6 +89,8 @@ $(function() {
           resultsContainer.find("#" + dataset.id).replaceWith(datasetTemplate(dataset));
         });
     });
+
+    if ('ga' in window) ga('send', 'event', 'corporate-data-search', q);
   });
 
 });
