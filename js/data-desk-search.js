@@ -1,99 +1,83 @@
-(function() {
-  var searchBox = $('#searchbox')[0];
-  var searchButton = $('#searchbutton');
-  var resultsContainer = $('#search-results');
-
+$(function() {
   var error = function(jqXHR, textStatus, errorThrown) {
     console.log(textStatus, errorThrown, jqXHR);
   };
 
-  var socrataDataset = function(baseURL, apiId, moreId) {
-    var id = Math.random().toString(36).substring(7);
-    var container = $("<div class=\"panel panel-default\">\
-    <div class=\"panel-heading\" role=\"tab\" id=\"heading" +  id + "\">\
-      <h4 class=\"panel-title\">\
-        <a role=\"button\" data-toggle=\"collapse\" data-parent=\"#search-results\" href=\"#collapse" +  id + "\" aria-expanded=\"false\" aria-controls=\"collapse" +  id + "\">\
-          <span class=\"portal-name\"></span>\
-          <span class=\"dataset-name\">...</span>\
-          <div>\
-            <span class=\"result-count\">...</span> results\
-          </div>\
-        </a>\
-      </h4>\
-    </div>\
-    <div id=\"collapse" +  id + "\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"heading" +  id + "\">\
-      <div class=\"panel-body dataset-results-container\"></div>\
-    </div>\
-  </div>");
-    var portalHeading = container.find('.portal-name');
-    portalHeading.html(baseURL);
-    var nameHeading = container.find('.dataset-name');
-    var resultsContainer = container.find('.dataset-results-container');
-    var countContainer = container.find('.result-count');
-    $.ajax(baseURL + '/api/views/' + apiId + '/rows.json', {
-      success: function(data) { nameHeading.html(data.meta.view.name); },
-      error: function(jqXHR, textStatus, errorThrown) {
-        error(jqXHR, textStatus, errorThrown);
-        nameHeading.append(moreURL);
-      }
-    });
-    var spinner = $('<img src="images/Ajax-loader.gif"></img>');
-    container.append(spinner);
-    var startSpinner = function() { spinner.show(); };
-    var stopSpinner = function() { spinner.hide(); };
-    var htmlURL = baseURL + '/' + moreId;
-    var success = function(query) {
-      return function(data) {
-        countContainer.html(data.length);
-        var searchMoreURL = htmlURL + '/data?q=' + query;
-        var searchMore = "<div><a target=\"_blank\" href=\"" + searchMoreURL + "\">Search more</a></div>";
-        $(searchMore).appendTo(resultsContainer);
-        for (i in data.slice(0,3)) {
-          var rows = "";
-          for (key in data[i]) {
-            rows += "<tr><td>" + key + "</td><td>" + data[i][key] + "</td></tr>";
-          }
-          $('<div class="result"><table class="table"><tr><th>field</th><th>value</th></tr>' + rows + '</table></div>').appendTo(resultsContainer);
-        };
-        if (data.length > 3) {
-          $('<h3>...</h3>').appendTo(resultsContainer);
-        }
-        resultsContainer.mark(stemmer(query), {
-          separateWordSearch: true
+  var SocrataDataset = function(name, baseURL, apiId, moreId) {
+    var self = this;
+
+    self.name = name;
+    self.htmlURL = baseURL + '/' + moreId;
+    self.id = Math.random().toString(36).substring(7);
+
+    self.parse = function(resp) {
+      self.total_hits = resp.length;
+      self.hits = [];
+
+      resp = resp.slice(0, 5);
+
+      for (var i = 0; i < resp.length; i++) {
+        var hit = resp[i];
+
+        self.hits.push({
+          info: hit,
+          summary: 'summary',
         });
       }
     };
 
-    return {
-      container: container,
-      resultsContainer: resultsContainer,
-      search: search = function(query) {
-        countContainer.html('...');
-        startSpinner();
-        $.ajax(baseURL + "/resource/" + apiId + ".json?$q=" + query, {
-          error: error,
-          success: success(query),
-          complete: function() { stopSpinner(); }
+    self.reset = function() {
+      self.hits = [];
+      self.total_hits = 0;
+      self.searching = true;
+      self.searchMoreURL = "";
+    };
+    self.reset();
+
+    self.search = function(query) {
+      var result = $.Deferred();
+
+      self.searchMoreURL = self.htmlURL + '/data?q=' + query;
+
+      $.ajax(baseURL + "/resource/" + apiId + ".json?$q=" + query)
+        .done(function(resp) {
+          self.searching = false;
+          self.parse(resp);
+          result.resolve();
         })
-      }
-    }
-  }
+        .fail(function(jqXHR, textStatus, errorThrown) {
+          self.searching = false;
+          error(jqXHR, textStatus, errorThrown);
+          result.fail();
+        });
+
+      return result;
+    };
+  };
 
   var datasets = [
-    socrataDataset("https://data.code4sa.org", "x6jj-hasw", "Business/SA-CIPC-Company-Names-Registration-Numbers-and-Det/f9mi-hay7"),
-    socrataDataset("https://data.code4sa.org", "qxgb-avr5", "Business/UK-Land-Registry/n7gy-as2q"),
-    socrataDataset("https://data.code4sa.org", "9vmn-5tnb", "Government/Tender-Awards-2015-2016/kvv2-xrvr")
+    new SocrataDataset("CIPC", "https://data.code4sa.org", "x6jj-hasw", "Business/SA-CIPC-Company-Names-Registration-Numbers-and-Det/f9mi-hay7"),
+    new SocrataDataset("UK Land Registry", "https://data.code4sa.org", "qxgb-avr5", "Business/UK-Land-Registry/n7gy-as2q"),
+    new SocrataDataset("Tender Awards 2015-2016", "https://data.code4sa.org", "9vmn-5tnb", "Government/Tender-Awards-2015-2016/kvv2-xrvr")
   ];
 
+  var resultsContainer = $('#corporate-data-search .search-results');
+  var datasetTemplate = Handlebars.compile($('#search-dataset-template').html());
 
-  $(searchbutton).on('click', function () {
+  $("#corporate-data-search form").on('submit', function(e) {
+    e.preventDefault();
     resultsContainer.empty();
+    var q = $(this).find('[name=q]').val();
+
     datasets.forEach(function(dataset) {
-      dataset.resultsContainer.empty();
-      resultsContainer.append(dataset.container);
-      dataset.search(searchBox.value);
+      dataset.reset();
+      resultsContainer.append(datasetTemplate(dataset));
+
+      dataset.search(q)
+        .then(function() {
+          resultsContainer.find("#" + dataset.id).replaceWith(datasetTemplate(dataset));
+        });
     });
-    return false;
   });
 
-})();
+});

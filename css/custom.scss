@@ -75,3 +75,19 @@
 		}
 	}
 }
+
+#corporate-data-search {
+  form {
+    padding: 0px;
+  }
+
+  .search-results {
+    .panel.searching {
+      .panel-body {
+	background-image: url(/images/ajax-loader.gif);
+	background-repeat: no-repeat;
+	background-position: 50%;
+      }
+    }
+  }
+}
