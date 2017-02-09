@@ -18,10 +18,20 @@ $(function() {
 
       for (var i = 0; i < resp.length; i++) {
         var hit = resp[i];
+        var summary = "";
+
+        $.each(hit, function(key, val) {
+          summary += " " + Handlebars.escapeExpression(val);
+        });
+        // mark() turns these into br
+        summary = summary.replace(/\n/, ' ');
+
+        var tmp = document.createElement('div');
+        tmp.innerText = summary;
+        new Mark(tmp).mark(stemmer(self.q), {separateWordSearch: true});
 
         self.hits.push({
-          info: hit,
-          summary: 'summary',
+          summary: tmp.innerHTML,
         });
       }
     };
@@ -38,6 +48,7 @@ $(function() {
       var result = $.Deferred();
 
       self.searchMoreURL = self.htmlURL + '/data?q=' + query;
+      self.q = query;
 
       $.ajax(baseURL + "/resource/" + apiId + ".json?$q=" + query)
         .done(function(resp) {

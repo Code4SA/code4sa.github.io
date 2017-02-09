@@ -82,9 +82,7 @@ extra_js:
 	      {{#if hits}}
 		<ul class="hits">
 		{{#each hits}}
-		  <li>
-		  {{ info }} - {{ summary }}
-		  </li>
+		  <li>{{{ summary }}}</li>
 		{{/each}}
 		</ul>
 
