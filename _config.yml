@@ -10,6 +10,8 @@ title: Code for South Africa
 email: info@code4sa.org
 description: Code for South Africa is a civic technology lab that uses data and technology to drive social change
 url: http://code4sa.org
+gems:
+  - jekyll-paginate
 
 collections:
   projects:

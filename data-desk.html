@@ -1,6 +1,11 @@
 ---
 layout: default
 title: "Data desk"
+extra_js:
+ - https://cdn.jsdelivr.net/g/mark.js@8.8.2(mark.min.js+jquery.mark.js
+ - /js/handlebars-v4.0.5.js
+ - /js/PorterStemmer1980.min.js
+ - /js/data-desk-search.js
 ---
 <!-- PAGE TOP -->
 <section class="page-title">
@@ -20,19 +25,6 @@ title: "Data desk"
 <section class="corporate-data-section">
   <div class="container">
     <div class="col-md-9">
-
-      <div class="corporate-data-request">
-        <form>
-	  <div class="input-group">
-            <input class="form-control" id="searchbox" placeholder="Search these datasets" type="text" autocomplete="off"></input>
-	    <span class="input-group-btn">
-	      <button id="searchbutton" class="btn btn-primary" type="submit">Search</button>
-	    </span>
-          </div>
-        </form>
-        <div id="search-results" class="panel-group" role="tablist" aria-multiselectable="true">
-        </div>
-      </div>
 
       <h3>Welcome to Code for South Africa’s Data Desk</h3>
       <p>Our mission is simple: To make corporate data freely and publically available, and to empower you to hold the right people in the corporate sector accountable when they do things that affect your everyday life.</p>
@@ -64,6 +56,49 @@ title: "Data desk"
 	<a target="_blank" class="btn btn-default" href="https://data.code4sa.org/Government/Tender-Awards-2015-2016/kvv2-xrvr/data">Tenders</a>
 	<a target="_blank" class="btn btn-default" href="https://data.code4sa.org/Business/SA-CIPC-Company-Names-Registration-Numbers-and-Det/f9mi-hay7/data">CIPC</a>
       </p>
+
+      <div id="corporate-data-search">
+	<h3 class="text-center">Search our Corporate Data Collection</h3>
+
+	<form method="get" action="#">
+	  <div class="input-group">
+	    <input class="form-control" name="q" placeholder="Search for corporate data" type="text" autocomplete="off">
+	    <span class="input-group-btn">
+	      <button class="btn btn-primary" type="submit">Search</button>
+	    </span>
+	  </div>
+	</form>
+
+	<div class="search-results"></div>
+
+	<script id="search-dataset-template" type="text/x-handlebars-template">
+	  {% raw %}
+
+	  <div class="panel panel-default {{#if searching}}searching{{/if}}" id="{{ id }}">
+	    <div class="panel-heading">
+	      <h3 class="panel-title">{{ name }}</h3>
+	    </div>
+	    <div class="panel-body">
+	      {{#if hits}}
+		<ul class="hits">
+		{{#each hits}}
+		  <li>{{{ summary }}}</li>
+		{{/each}}
+		</ul>
+
+		<div><a href="{{ searchMoreURL }}" target="_blank">All {{ total_hits }} results from {{ name }} →</a></div>
+	      {{else}}
+	        {{#unless searching}}
+		<i>nothing found</i>
+		{{/unless}}
+	      {{/if}}
+	    </div>
+	  </div>
+
+	  {% endraw %}
+	</script>
+
+      </div>
     </div>
 
     <div class="col-md-3">
@@ -82,7 +117,3 @@ title: "Data desk"
   </div>
 </section>
 <!-- /CONTENT -->
-
-<script src="https://cdn.jsdelivr.net/g/mark.js@8.8.2(mark.min.js+jquery.mark.js)"></script>
-<script src="js/PorterStemmer1980.min.js"></script>
-<script src="js/data-desk-search.js"></script>
