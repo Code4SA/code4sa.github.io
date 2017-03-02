@@ -15,7 +15,7 @@ SAFLII, the Southern African Legal Information Institute, is an online repositor
 
 Code for South Africa is very proud to help SAFLII add government gazettes to their collection of legal resources, making them broadly available to a large number of daily users. This was made possible through the [Open Gazettes South Africa](http://opengazettes.org.za) project, through which we're building the biggest freely available online collection of gazettes in South Africa. 
 
-### Joint the Gazette Liberation
+### Join the Gazette Liberation
 
 If you'd like to add gazettes to your website or collection, or you have gazettes you'd like to contribute to our free public collection, please email [gazettes@code4sa.org](mailto:gazettes@code4sa.org).
 
