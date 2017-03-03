@@ -10,7 +10,7 @@ We're really excited to announce that over 14,000 South African Government Gazet
 
 SAFLII, the Southern African Legal Information Institute, is an online repository of legal information that aims to promote the rule of law and judicial accountability by publishing legal material for open access in line with the objectives of the global Free Access to Law Movement.
 
-Code for South Africa is very proud to help SAFLII add government gazettes to their collection of legal resources, making them broadly available to a large number of daily users. This was made possible through the [Open Gazettes South Africa](http://opengazettes.org.za) project, through which we're building the biggest freely available online collection of gazettes in South Africa. 
+Code for South Africa is very proud to work with SAFLII add government gazettes to their collection of legal resources, making them broadly available to a large number of daily users. This was made possible through the [Open Gazettes South Africa](http://opengazettes.org.za) project, through which we're building the biggest freely available online collection of gazettes in South Africa. 
 
 ### Join the Gazette Liberation
 
