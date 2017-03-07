@@ -1,10 +1,10 @@
 ----
- -layout: post
- -title: Shareholder requests and the access battle
- -date: 2017-03-07
- -excerpt: In the first of our series introducing Code for South Africa's Transparent Corporates project, we look at the state of transparency within company ownership and how the law facilitates access to this type of information.
- -image: http://code4sa.org/images/blog/shareholder-application.jpg
- -author: Roxanne Joseph
+ layout: post
+ title: Shareholder requests and the access battle
+ date: 2017-03-07
+ excerpt: In the first of our series introducing Code for South Africa's Transparent Corporates project, we look at the state of transparency within company ownership and how the law facilitates access to this type of information.
+ image: http://code4sa.org/images/blog/shareholder-application.jpg
+ author: Roxanne Joseph
  ----
 _This year, Code for South Africa launched a project that interrogates transparency within the private sector, “Transparent Corporates” (Trace). Our mission is to make corporate data freely and publicly available, and to empower everyone living in South Africa to hold the right people in the private sector accountable when they do things that affect everyday life. Over the next few weeks, we’ll be publishing a series of blogs that highlights some of the work we do, from looking at international shareholding to tax evasion, Trump to paid Twitter and much, much more. In the first of our series, we look at the state of transparency within company ownership and how the law facilitates access to this type of information._
  
