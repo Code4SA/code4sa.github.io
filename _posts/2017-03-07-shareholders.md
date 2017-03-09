@@ -31,7 +31,6 @@ Investigative journalism unit _amaBhungane_, who entered into the subsequent app
 
 The Promotion of Access to Information Act (PAIA) is a process that allows anyone to [access information](http://www.justice.gov.za/legislation/acts/2000-002.pdf) that “is held by another person and that is required for the exercise or protection of any rights”. But PAIA works both ways, and allows for a private body (or company) to refuse access to records for various reasons. In many instances, accessing company records first time can be quite tough and an applicant can be forced to jump through multiple hoops to get the information they want. 
 
-
 ##Corporate governance in the extractives sector
 
 Corporate governance deals with the framework in which companies are directed and controlled. Here in South Africa, it is regulated by legislation and the common law, and in the past decade or so, the concept of corporate social responsibility has also emerged as a part of both the private and public sectors’ code of governance. 
