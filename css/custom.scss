@@ -9,6 +9,15 @@
   z-index: 999;
   top: 0px;
   background-color: white;
+  #logo {
+  	display: none;
+	  @media (max-width:990px) {
+	  	display: block;
+	  }
+	  @media (min-width:1125px) {
+	    display: block;
+	  }
+  }
 }
 
 body {
