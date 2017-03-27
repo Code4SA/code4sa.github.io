@@ -12,6 +12,7 @@ description: Code for South Africa is a civic technology lab that uses data and 
 url: http://code4sa.org
 gems:
   - jekyll-paginate
+  - jekyll-redirect-from
 
 collections:
   projects:
